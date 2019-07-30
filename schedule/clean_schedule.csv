@@ -1,0 +1,257 @@
+date, time, home, away
+09/05/2019, 20:20,  Green Bay Packers, Chicago Bears
+09/08/2019, 13:00,  Atlanta Falcons, Minnesota Vikings
+09/08/2019, 13:00,  Baltimore Ravens, Miami Dolphins
+09/08/2019, 13:00,  Buffalo Bills, New York Jets
+09/08/2019, 13:00,  Kansas City Chiefs, Jacksonville Jaguars
+09/08/2019, 13:00,  Los Angeles Rams, Carolina Panthers
+09/08/2019, 13:00,  Tennessee Titans, Cleveland Browns
+09/08/2019, 13:00,  Washington Redskins, Philadelphia Eagles
+09/08/2019, 16:05,  Cincinnati Bengals, Seattle Seahawks
+09/08/2019, 16:05,  Indianapolis Colts, Los Angeles Chargers
+09/08/2019, 16:25,  Detroit Lions, Arizona Cardinals
+09/08/2019, 16:25,  New York Giants, Dallas Cowboys
+09/08/2019, 16:25,  San Francisco 49ers, Tampa Bay Buccaneers
+09/08/2019, 20:20,  Pittsburgh Steelers, New England Patriots
+09/09/2019, 19:10,  Houston Texans, New Orleans Saints
+09/09/2019, 22:20,  Denver Broncos, Oakland Raiders
+09/12/2019, 20:20,  Tampa Bay Buccaneers, Carolina Panthers
+09/15/2019, 13:00,  Arizona Cardinals, Baltimore Ravens
+09/15/2019, 13:00,  Buffalo Bills, New York Giants
+09/15/2019, 13:00,  Dallas Cowboys, Washington Redskins
+09/15/2019, 13:00,  Indianapolis Colts, Tennessee Titans
+09/15/2019, 13:00,  Jacksonville Jaguars, Houston Texans
+09/15/2019, 13:00,  Los Angeles Chargers, Detroit Lions
+09/15/2019, 13:00,  Minnesota Vikings, Green Bay Packers
+09/15/2019, 13:00,  New England Patriots, Miami Dolphins
+09/15/2019, 13:00,  San Francisco 49ers, Cincinnati Bengals
+09/15/2019, 13:00,  Seattle Seahawks, Pittsburgh Steelers
+09/15/2019, 16:05,  Kansas City Chiefs, Oakland Raiders
+09/15/2019, 16:25,  Chicago Bears, Denver Broncos
+09/15/2019, 16:25,  New Orleans Saints, Los Angeles Rams
+09/15/2019, 20:20,  Philadelphia Eagles, Atlanta Falcons
+09/16/2019, 20:15,  Cleveland Browns, New York Jets
+09/19/2019, 20:20,  Tennessee Titans, Jacksonville Jaguars
+09/22/2019, 13:00,  Atlanta Falcons, Indianapolis Colts
+09/22/2019, 13:00,  Baltimore Ravens, Kansas City Chiefs
+09/22/2019, 13:00,  Cincinnati Bengals, Buffalo Bills
+09/22/2019, 13:00,  Denver Broncos, Green Bay Packers
+09/22/2019, 13:00,  Detroit Lions, Philadelphia Eagles
+09/22/2019, 13:00,  Miami Dolphins, Dallas Cowboys
+09/22/2019, 13:00,  New York Jets, New England Patriots
+09/22/2019, 13:00,  Oakland Raiders, Minnesota Vikings
+09/22/2019, 16:05,  Carolina Panthers, Arizona Cardinals
+09/22/2019, 16:05,  New York Giants, Tampa Bay Buccaneers
+09/22/2019, 16:25,  Houston Texans, Los Angeles Chargers
+09/22/2019, 16:25,  New Orleans Saints, Seattle Seahawks
+09/22/2019, 16:25,  Pittsburgh Steelers, San Francisco 49ers
+09/22/2019, 20:20,  Los Angeles Rams, Cleveland Browns
+09/23/2019, 20:15,  Chicago Bears, Washington Redskins
+09/26/2019, 20:20,  Philadelphia Eagles, Green Bay Packers
+09/29/2019, 13:00,  Carolina Panthers, Houston Texans
+09/29/2019, 13:00,  Cleveland Browns, Baltimore Ravens
+09/29/2019, 13:00,  Kansas City Chiefs, Detroit Lions
+09/29/2019, 13:00,  Los Angeles Chargers, Miami Dolphins
+09/29/2019, 13:00,  New England Patriots, Buffalo Bills
+09/29/2019, 13:00,  Oakland Raiders, Indianapolis Colts
+09/29/2019, 13:00,  Tennessee Titans, Atlanta Falcons
+09/29/2019, 13:00,  Washington Redskins, New York Giants
+09/29/2019, 16:05,  Seattle Seahawks, Arizona Cardinals
+09/29/2019, 16:05,  Tampa Bay Buccaneers, Los Angeles Rams
+09/29/2019, 16:25,  Jacksonville Jaguars, Denver Broncos
+09/29/2019, 16:25,  Minnesota Vikings, Chicago Bears
+09/29/2019, 20:20,  Dallas Cowboys, New Orleans Saints
+09/30/2019, 20:15,  Cincinnati Bengals, Pittsburgh Steelers
+10/03/2019, 20:20,  Los Angeles Rams, Seattle Seahawks
+10/06/2019, 13:00,  Arizona Cardinals, Cincinnati Bengals
+10/06/2019, 13:00,  Atlanta Falcons, Houston Texans
+10/06/2019, 13:00,  Baltimore Ravens, Pittsburgh Steelers
+10/06/2019, 13:00,  Buffalo Bills, Tennessee Titans
+10/06/2019, 13:00,  Chicago Bears, Oakland Raiders
+10/06/2019, 13:00,  Jacksonville Jaguars, Carolina Panthers
+10/06/2019, 13:00,  Minnesota Vikings, New York Giants
+10/06/2019, 13:00,  New England Patriots, Washington Redskins
+10/06/2019, 13:00,  New York Jets, Philadelphia Eagles
+10/06/2019, 13:00,  Tampa Bay Buccaneers, New Orleans Saints
+10/06/2019, 16:05,  Denver Broncos, Los Angeles Chargers
+10/06/2019, 16:25,  Green Bay Packers, Dallas Cowboys
+10/06/2019, 20:20,  Indianapolis Colts, Kansas City Chiefs
+10/07/2019, 20:15,  Cleveland Browns, San Francisco 49ers
+10/10/2019, 20:20,  New York Giants, New England Patriots
+10/13/2019, 09:30,  Carolina Panthers, Tampa Bay Buccaneers
+10/13/2019, 13:00,  Cincinnati Bengals, Baltimore Ravens
+10/13/2019, 13:00,  Houston Texans, Kansas City Chiefs
+10/13/2019, 13:00,  New Orleans Saints, Jacksonville Jaguars
+10/13/2019, 13:00,  Philadelphia Eagles, Minnesota Vikings
+10/13/2019, 13:00,  Seattle Seahawks, Cleveland Browns
+10/13/2019, 13:00,  Washington Redskins, Miami Dolphins
+10/13/2019, 16:05,  Atlanta Falcons, Arizona Cardinals
+10/13/2019, 16:05,  San Francisco 49ers, Los Angeles Rams
+10/13/2019, 16:25,  Dallas Cowboys, New York Jets
+10/13/2019, 16:25,  Tennessee Titans, Denver Broncos
+10/13/2019, 20:20,  Pittsburgh Steelers, Los Angeles Chargers
+10/14/2019, 20:15,  Detroit Lions, Green Bay Packers
+10/17/2019, 20:20,  Kansas City Chiefs, Denver Broncos
+10/20/2019, 13:00,  Arizona Cardinals, New York Giants
+10/20/2019, 13:00,  Houston Texans, Indianapolis Colts
+10/20/2019, 13:00,  Jacksonville Jaguars, Cincinnati Bengals
+10/20/2019, 13:00,  Los Angeles Rams, Atlanta Falcons
+10/20/2019, 13:00,  Miami Dolphins, Buffalo Bills
+10/20/2019, 13:00,  Minnesota Vikings, Detroit Lions
+10/20/2019, 13:00,  Oakland Raiders, Green Bay Packers
+10/20/2019, 13:00,  San Francisco 49ers, Washington Redskins
+10/20/2019, 16:05,  Los Angeles Chargers, Tennessee Titans
+10/20/2019, 16:25,  Baltimore Ravens, Seattle Seahawks
+10/20/2019, 16:25,  New Orleans Saints, Chicago Bears
+10/20/2019, 20:20,  Philadelphia Eagles, Dallas Cowboys
+10/21/2019, 20:15,  New England Patriots, New York Jets
+10/24/2019, 20:20,  Washington Redskins, Minnesota Vikings
+10/27/2019, 13:00,  Arizona Cardinals, New Orleans Saints
+10/27/2019, 13:00,  Cincinnati Bengals, Los Angeles Rams
+10/27/2019, 13:00,  Los Angeles Chargers, Chicago Bears
+10/27/2019, 13:00,  New York Giants, Detroit Lions
+10/27/2019, 13:00,  New York Jets, Jacksonville Jaguars
+10/27/2019, 13:00,  Oakland Raiders, Houston Texans
+10/27/2019, 13:00,  Philadelphia Eagles, Buffalo Bills
+10/27/2019, 13:00,  Seattle Seahawks, Atlanta Falcons
+10/27/2019, 13:00,  Tampa Bay Buccaneers, Tennessee Titans
+10/27/2019, 16:05,  Carolina Panthers, San Francisco 49ers
+10/27/2019, 16:25,  Cleveland Browns, New England Patriots
+10/27/2019, 16:25,  Denver Broncos, Indianapolis Colts
+10/27/2019, 20:20,  Green Bay Packers, Kansas City Chiefs
+10/28/2019, 20:15,  Miami Dolphins, Pittsburgh Steelers
+10/31/2019, 20:20,  San Francisco 49ers, Arizona Cardinals
+11/03/2019, 09:30,  Houston Texans, Jacksonville Jaguars
+11/03/2019, 13:00,  Chicago Bears, Philadelphia Eagles
+11/03/2019, 13:00,  Indianapolis Colts, Pittsburgh Steelers
+11/03/2019, 13:00,  Minnesota Vikings, Kansas City Chiefs
+11/03/2019, 13:00,  New York Jets, Miami Dolphins
+11/03/2019, 13:00,  Tennessee Titans, Carolina Panthers
+11/03/2019, 13:00,  Washington Redskins, Buffalo Bills
+11/03/2019, 16:05,  Detroit Lions, Oakland Raiders
+11/03/2019, 16:05,  Tampa Bay Buccaneers, Seattle Seahawks
+11/03/2019, 16:25,  Cleveland Browns, Denver Broncos
+11/03/2019, 16:25,  Green Bay Packers, Los Angeles Chargers
+11/03/2019, 20:20,  New England Patriots, Baltimore Ravens
+11/04/2019, 20:15,  Dallas Cowboys, New York Giants
+11/07/2019, 20:20,  Los Angeles Chargers, Oakland Raiders
+11/10/2019, 13:00,  Arizona Cardinals, Tampa Bay Buccaneers
+11/10/2019, 13:00,  Atlanta Falcons, New Orleans Saints
+11/10/2019, 13:00,  Baltimore Ravens, Cincinnati Bengals
+11/10/2019, 13:00,  Buffalo Bills, Cleveland Browns
+11/10/2019, 13:00,  Carolina Panthers, Green Bay Packers
+11/10/2019, 13:00,  Detroit Lions, Chicago Bears
+11/10/2019, 13:00,  Kansas City Chiefs, Tennessee Titans
+11/10/2019, 13:00,  New York Giants, New York Jets
+11/10/2019, 16:05,  Miami Dolphins, Indianapolis Colts
+11/10/2019, 16:25,  Los Angeles Rams, Pittsburgh Steelers
+11/10/2019, 20:20,  Minnesota Vikings, Dallas Cowboys
+11/11/2019, 20:15,  Seattle Seahawks, San Francisco 49ers
+11/14/2019, 20:20,  Pittsburgh Steelers, Cleveland Browns
+11/17/2019, 13:00,  Atlanta Falcons, Carolina Panthers
+11/17/2019, 13:00,  Buffalo Bills, Miami Dolphins
+11/17/2019, 13:00,  Dallas Cowboys, Detroit Lions
+11/17/2019, 13:00,  Denver Broncos, Minnesota Vikings
+11/17/2019, 13:00,  Houston Texans, Baltimore Ravens
+11/17/2019, 13:00,  Jacksonville Jaguars, Indianapolis Colts
+11/17/2019, 13:00,  New Orleans Saints, Tampa Bay Buccaneers
+11/17/2019, 13:00,  New York Jets, Washington Redskins
+11/17/2019, 16:05,  Arizona Cardinals, San Francisco 49ers
+11/17/2019, 16:25,  Cincinnati Bengals, Oakland Raiders
+11/17/2019, 16:25,  New England Patriots, Philadelphia Eagles
+11/17/2019, 20:20,  Chicago Bears, Los Angeles Rams
+11/18/2019, 20:15,  Kansas City Chiefs, Los Angeles Chargers
+11/21/2019, 20:20,  Indianapolis Colts, Houston Texans
+11/24/2019, 13:00,  Carolina Panthers, New Orleans Saints
+11/24/2019, 13:00,  Denver Broncos, Buffalo Bills
+11/24/2019, 13:00,  Detroit Lions, Washington Redskins
+11/24/2019, 13:00,  Miami Dolphins, Cleveland Browns
+11/24/2019, 13:00,  New York Giants, Chicago Bears
+11/24/2019, 13:00,  Oakland Raiders, New York Jets
+11/24/2019, 13:00,  Pittsburgh Steelers, Cincinnati Bengals
+11/24/2019, 13:00,  Tampa Bay Buccaneers, Atlanta Falcons
+11/24/2019, 16:05,  Jacksonville Jaguars, Tennessee Titans
+11/24/2019, 16:25,  Dallas Cowboys, New England Patriots
+11/24/2019, 16:25,  Green Bay Packers, San Francisco 49ers
+11/24/2019, 20:20,  Seattle Seahawks, Philadelphia Eagles
+11/25/2019, 20:15,  Baltimore Ravens, Los Angeles Rams
+11/28/2019, 12:30,  Chicago Bears, Detroit Lions
+11/28/2019, 16:30,  Buffalo Bills, Dallas Cowboys
+11/28/2019, 20:20,  New Orleans Saints, Atlanta Falcons
+12/01/2019, 13:00,  Green Bay Packers, New York Giants
+12/01/2019, 13:00,  New York Jets, Cincinnati Bengals
+12/01/2019, 13:00,  Oakland Raiders, Kansas City Chiefs
+12/01/2019, 13:00,  Philadelphia Eagles, Miami Dolphins
+12/01/2019, 13:00,  San Francisco 49ers, Baltimore Ravens
+12/01/2019, 13:00,  Tampa Bay Buccaneers, Jacksonville Jaguars
+12/01/2019, 13:00,  Tennessee Titans, Indianapolis Colts
+12/01/2019, 13:00,  Washington Redskins, Carolina Panthers
+12/01/2019, 16:05,  Los Angeles Rams, Arizona Cardinals
+12/01/2019, 16:25,  Cleveland Browns, Pittsburgh Steelers
+12/01/2019, 16:25,  Los Angeles Chargers, Denver Broncos
+12/01/2019, 20:20,  New England Patriots, Houston Texans
+12/02/2019, 20:15,  Minnesota Vikings, Seattle Seahawks
+12/05/2019, 20:20,  Dallas Cowboys, Chicago Bears
+12/08/2019, 13:00,  Baltimore Ravens, Buffalo Bills
+12/08/2019, 13:00,  Carolina Panthers, Atlanta Falcons
+12/08/2019, 13:00,  Cincinnati Bengals, Cleveland Browns
+12/08/2019, 13:00,  Denver Broncos, Houston Texans
+12/08/2019, 13:00,  Detroit Lions, Minnesota Vikings
+12/08/2019, 13:00,  Indianapolis Colts, Tampa Bay Buccaneers
+12/08/2019, 13:00,  Miami Dolphins, New York Jets
+12/08/2019, 13:00,  San Francisco 49ers, New Orleans Saints
+12/08/2019, 13:00,  Washington Redskins, Green Bay Packers
+12/08/2019, 16:05,  Los Angeles Chargers, Jacksonville Jaguars
+12/08/2019, 16:25,  Kansas City Chiefs, New England Patriots
+12/08/2019, 16:25,  Pittsburgh Steelers, Arizona Cardinals
+12/08/2019, 16:25,  Tennessee Titans, Oakland Raiders
+12/08/2019, 20:20,  Seattle Seahawks, Los Angeles Rams
+12/09/2019, 20:15,  New York Giants, Philadelphia Eagles
+12/12/2019, 20:20,  New York Jets, Baltimore Ravens
+12/15/2019, 13:00,  Buffalo Bills, Pittsburgh Steelers
+12/15/2019, 13:00,  Chicago Bears, Green Bay Packers
+12/15/2019, 13:00,  Denver Broncos, Kansas City Chiefs
+12/15/2019, 13:00,  Houston Texans, Tennessee Titans
+12/15/2019, 13:00,  Miami Dolphins, New York Giants
+12/15/2019, 13:00,  New England Patriots, Cincinnati Bengals
+12/15/2019, 13:00,  Philadelphia Eagles, Washington Redskins
+12/15/2019, 13:00,  Seattle Seahawks, Carolina Panthers
+12/15/2019, 13:00,  Tampa Bay Buccaneers, Detroit Lions
+12/15/2019, 16:05,  Cleveland Browns, Arizona Cardinals
+12/15/2019, 16:05,  Jacksonville Jaguars, Oakland Raiders
+12/15/2019, 16:25,  Atlanta Falcons, San Francisco 49ers
+12/15/2019, 16:25,  Los Angeles Rams, Dallas Cowboys
+12/15/2019, 20:20,  Minnesota Vikings, Los Angeles Chargers
+12/16/2019, 20:15,  Indianapolis Colts, New Orleans Saints
+12/22/2019, 13:00,  Baltimore Ravens, Cleveland Browns
+12/22/2019, 13:00,  Buffalo Bills, New England Patriots
+12/22/2019, 13:00,  Carolina Panthers, Indianapolis Colts
+12/22/2019, 13:00,  Cincinnati Bengals, Miami Dolphins
+12/22/2019, 13:00,  Detroit Lions, Denver Broncos
+12/22/2019, 13:00,  Houston Texans, Tampa Bay Buccaneers
+12/22/2019, 13:00,  Jacksonville Jaguars, Atlanta Falcons
+12/22/2019, 13:00,  Los Angeles Rams, San Francisco 49ers
+12/22/2019, 13:00,  New Orleans Saints, Tennessee Titans
+12/22/2019, 13:00,  New York Giants, Washington Redskins
+12/22/2019, 13:00,  Oakland Raiders, Los Angeles Chargers
+12/22/2019, 13:00,  Pittsburgh Steelers, New York Jets
+12/22/2019, 16:25,  Arizona Cardinals, Seattle Seahawks
+12/22/2019, 16:25,  Dallas Cowboys, Philadelphia Eagles
+12/22/2019, 20:20,  Kansas City Chiefs, Chicago Bears
+12/23/2019, 20:15,  Green Bay Packers, Minnesota Vikings
+12/29/2019, 13:00,  Atlanta Falcons, Tampa Bay Buccaneers
+12/29/2019, 13:00,  Chicago Bears, Minnesota Vikings
+12/29/2019, 13:00,  Cleveland Browns, Cincinnati Bengals
+12/29/2019, 13:00,  Green Bay Packers, Detroit Lions
+12/29/2019, 13:00,  Indianapolis Colts, Jacksonville Jaguars
+12/29/2019, 13:00,  Los Angeles Chargers, Kansas City Chiefs
+12/29/2019, 13:00,  Miami Dolphins, New England Patriots
+12/29/2019, 13:00,  New Orleans Saints, Carolina Panthers
+12/29/2019, 13:00,  New York Jets, Buffalo Bills
+12/29/2019, 13:00,  Philadelphia Eagles, New York Giants
+12/29/2019, 13:00,  Pittsburgh Steelers, Baltimore Ravens
+12/29/2019, 13:00,  Tennessee Titans, Houston Texans
+12/29/2019, 13:00,  Washington Redskins, Dallas Cowboys
+12/29/2019, 16:25,  Arizona Cardinals, Los Angeles Rams
+12/29/2019, 16:25,  Oakland Raiders, Denver Broncos
+12/29/2019, 16:25,  San Francisco 49ers, Seattle Seahawks
