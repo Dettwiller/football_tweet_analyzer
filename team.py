@@ -1,7 +1,7 @@
 import os
 from datetime import datetime, timedelta
 
-import sentiment # TODO this entire file
+import sentiment
 
 class Team():
     def __init__(self, team_name, twitter_tags, data_path):
