@@ -12,7 +12,7 @@ input_file = "nfl_schedule.csv"
 output_file = "clean_schedule.csv"
 with open(input_file, "rt", encoding='utf-8') as inf:
     with open(output_file, "w+", encoding='utf-8') as ouf:
-        output_line = "date, time, home, away\n"
+        output_line = "date, time (ET), home, away\n"
         ouf.write(output_line)
         line = normalize('NFKD', inf.readline().strip())
         while line:
