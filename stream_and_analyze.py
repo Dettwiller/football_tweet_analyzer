@@ -6,6 +6,7 @@ from nfl_twitter_tags import nfl_tags_dict
 from team import Team
 from datetime import datetime, timedelta
 from time import sleep
+from matchup import Matchup
 
 
 def get_tokens(token_file):
@@ -19,13 +20,12 @@ def get_tokens(token_file):
     return personal_keys, bot_keys
 
 
-def stream(tags, auth_tokens, data_path):
-    twitter_account = custom_twitter.TwitterAccount(auth_tokens[0], auth_tokens[1], auth_tokens[2], auth_tokens[3])
+def stream(tags, twitter_account, data_path):
     stream_listener = custom_twitter.MyStreamListener(twitter_account, data_path)
     stream = tweepy.Stream(auth = twitter_account.auth, listener = stream_listener)
     stream.filter(track=tags)
 
-def fork_stream(tags, auth_tokens, data_path, stream_log):
+def fork_stream(tags, twitter_account, data_path, stream_log):
     newpid = os.fork()
     if newpid == 0:
         failures = 0
@@ -34,7 +34,7 @@ def fork_stream(tags, auth_tokens, data_path, stream_log):
                 log = "{:%Y-%B-%d}".format(datetime.now()) + " streaming...\n"
                 with open(stream_log, "a+", encoding='utf-8') as sl:
                     sl.write(log)
-                stream(tags, auth_tokens, data_path)
+                stream(tags, twitter_account, data_path)
             except:
                 failures += 1
                 log = "{:%Y-%B-%d}".format(datetime.now()) + " stream failure " + str(failures) + "\n\n"
@@ -85,7 +85,7 @@ def get_matchups(schedule_file, current_game_time):
             correct_day = game_line_list[0] == current_date_str
             correct_time = game_line_list[1] == current_time_str
             if correct_day and correct_time:
-                matchup_list.append([game_line_list[2], game_line_list[3]])
+                matchup_list.append([game_line_list[2].strip(), game_line_list[3].strip()])
             game_line = sf.readline()
     return matchup_list
 
@@ -100,6 +100,8 @@ if __name__ == "__main__":
     token_file = sys.argv[1]
     personal_token_list, bot_token_list = get_tokens(token_file)
 
+    bot_account = custom_twitter.TwitterAccount(bot_token_list[0], bot_token_list[1], bot_token_list[2], bot_token_list[3])
+
     schedule_file = os.getcwd() + os.sep + "schedule" + os.sep + schedule_filename
     data_path = os.getcwd() + os.sep + "datafiles"
     nfl_tags = []
@@ -109,13 +111,19 @@ if __name__ == "__main__":
         league[team_name] = Team(team_name, nfl_tags_dict[team_name], data_path)
 
     stream_log = os.getcwd() + os.sep + "logs" + os.sep + stream_log_filename
-    # fork_stream(nfl_tags, bot_token_list, data_path, stream_log)
+    # fork_stream(nfl_tags, bot_account, data_path, stream_log)
 
     analysis_log_file = os.getcwd() + os.sep + "logs" + os.sep + analysis_log_filename
     next_game_time = get_next_game_time(schedule_file)
 
     if debug:
-        matchup_list = get_matchups(schedule_file, next_game_time)
+        matchup_name_list = get_matchups(schedule_file, next_game_time)
+        matchups = {}
+        for m in matchup_name_list:
+            home_team = league[m[0]]
+            away_team = league[m[1]]
+            matchup = Matchup(home_team, away_team, next_game_time, debug=debug)
+            matchup.analyze(bot_account, threshold = 0.0, print_result = True, send_tweet = True)
     else:
         while (datetime.now() - next_game_time).total_seconds() < 0:
             # get_to_gametime(next_game_time, analysis_log_file)

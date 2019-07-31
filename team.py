@@ -10,7 +10,7 @@ class Team():
         self.raw_data_path = data_path + os.sep + "raw"
         self.team_data_path = data_path + os.sep + "team"
 
-        self.name = team_name
+        self.name = "_".join(team_name.split())
         self.tags = twitter_tags
         self.lower_tag_list = [tag.lower() for tag in (''.join(twitter_tags)).split('#')[1:]]
 

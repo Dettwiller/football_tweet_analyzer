@@ -39,20 +39,20 @@ Chargers_tags = ["#chargers", "#LAChargers"]
 Raiders_tags = ["#raiders", "#raidernation"]
 
 nfl_tags_dict = {
-    "Giants": Giants_tags, "Cowboys": Cowboys_tags,
-    "Eagles": Eagles_tags, "Washington": Washington_tags,
-    "Saints": Saints_tags, "Falcons": Falcons_tags,
-    "Buccaneers": Buccaneers_tags, "Panthers": Panthers_tags,
-    "Vikings": Vikings_tags, "Bears": Bears_tags,
-    "Lions": Lions_tags, "Packers": Packers_tags,
-    "Cardinals": Cardinals_tags, "49ers": SF49ers_tags,
-    "Rams": Rams_tags, "Seahawks": Seahawks_tags,
-    "Patriots": Patriots_tags, "Bills": Bills_tags,
-    "Dolphins": Dolphins_tags, "Jets": Jets_tags,
-    "Ravens": Ravens_tags, "Bengals": Bengals_tags,
-    "Browns": Browns_tags, "Steelers": Steelers_tags,
-    "Texans": Texans_tags, "Colts": Colts_tags,
-    "Jaguars": Jags_tags, "Titans": Titans_tags,
-    "Broncos": Broncos_tags, "Chiefs": Chiefs_tags,
-    "Chargers": Chargers_tags, "Raiders": Raiders_tags
+    "New York Giants": Giants_tags, "Dallas Cowboys": Cowboys_tags,
+    "Philadelphia Eagles": Eagles_tags, "Washington Redskins": Washington_tags,
+    "New Orleans Saints": Saints_tags, "Atlanta Falcons": Falcons_tags,
+    "Tampa Bay Buccaneers": Buccaneers_tags, "Carolina Panthers": Panthers_tags,
+    "Minnesota Vikings": Vikings_tags, "Chicago Bears": Bears_tags,
+    "Detroit Lions": Lions_tags, "Green Bay Packers": Packers_tags,
+    "Arizona Cardinals": Cardinals_tags, "San Francisco 49ers": SF49ers_tags,
+    "Los Angeles Rams": Rams_tags, "Seattle Seahawks": Seahawks_tags,
+    "New England Patriots": Patriots_tags, "Buffalo Bills": Bills_tags,
+    "Miami Dolphins": Dolphins_tags, "New York Jets": Jets_tags,
+    "Baltimore Ravens": Ravens_tags, "Cincinnati Bengals": Bengals_tags,
+    "Cleveland Browns": Browns_tags, "Pittsburgh Steelers": Steelers_tags,
+    "Houston Texans": Texans_tags, "Indianapolis Colts": Colts_tags,
+    "Jacksonville Jaguars": Jags_tags, "Tennessee Titans": Titans_tags,
+    "Denver Broncos": Broncos_tags, "Kansas City Chiefs": Chiefs_tags,
+    "Los Angeles Chargers": Chargers_tags, "Oakland Raiders": Raiders_tags
     }
