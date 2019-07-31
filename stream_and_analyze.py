@@ -1,5 +1,18 @@
+import sys
 import tweepy
 import custom_twitter
+
+
+def get_tokens(token_file):
+    with open(token_file, "r", encoding='utf-8') as tf:
+        file_lines = tf.readlines()
+    personal_keys = ["", "", "", ""] # consumer, consumer secret, access, access secret
+    bot_keys = ["", "", "", ""]
+    for i in range(4):
+        personal_keys[i] = file_lines[i + 1].split()[-1].strip()
+        bot_keys[i] = file_lines[i + 7].split()[-1].strip()
+    return personal_keys, bot_keys
+
 
 def forever_stream(tags, auth_tokens):
     # TODO test the damn thing
@@ -16,7 +29,14 @@ def forever_stream(tags, auth_tokens):
 
 
 if __name__ == "__main__":
+    # TODO define the tags from all the teams (btw how we doing teams now?)
     # TODO: fork a stream to gather data
+
+    # The following bit of code is my solution to being able to test this without
+    # my twitter account keys showing up in the code or having to remember to
+    # delete them all the time.
+    token_file = sys.argv[1]
+    personal_token_list, bot_token_list = get_tokens(token_file)
     # TODO: loop through games and perform analysis if time_until_game < 1 hour
     # NOTE: Games in clean_schedule.csv are in chronological order
     pass
