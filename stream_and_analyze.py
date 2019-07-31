@@ -71,8 +71,26 @@ def get_to_gametime(next_game_time, log_file):
         current_time = datetime.now()
         seconds_until_game = int((next_game_time - current_time).total_seconds())
 
+def get_matchups(schedule_file, current_game_time):
+    # add an hour to get back to eastern time
+    current_game_time = current_game_time + timedelta(hours=1)
+    current_date_str = current_game_time.strftime('%m/%d/%Y')
+    current_time_str = current_game_time.strftime('%H:%M')
+    matchup_list = []
+    with open(schedule_file, "r", encoding='utf-8') as sf:
+        sf.readline() # waste the header
+        game_line = sf.readline()
+        while game_line:
+            game_line_list = [text.strip() for text in game_line.strip().split(",")]
+            correct_day = game_line_list[0] == current_date_str
+            correct_time = game_line_list[1] == current_time_str
+            if correct_day and correct_time:
+                matchup_list.append([game_line_list[2], game_line_list[3]])
+            game_line = sf.readline()
+    return matchup_list
 
 if __name__ == "__main__":
+    debug = True
     stream_log_filename = "stream_status.txt"
     analysis_log_filename = "analysis_status.txt"
     schedule_filename = "clean_schedule.csv"
@@ -95,7 +113,12 @@ if __name__ == "__main__":
 
     analysis_log_file = os.getcwd() + os.sep + "logs" + os.sep + analysis_log_filename
     next_game_time = get_next_game_time(schedule_file)
-    while (datetime.now() - next_game_time).total_seconds() < 0:
-        get_to_gametime(next_game_time, analysis_log_file)
-        # TODO analyze all matchups at that gametime
-        next_game_time = get_next_game_time(schedule_file)
+
+    if debug:
+        matchup_list = get_matchups(schedule_file, next_game_time)
+    else:
+        while (datetime.now() - next_game_time).total_seconds() < 0:
+            # get_to_gametime(next_game_time, analysis_log_file)
+            matchup_list = get_matchups(schedule_file, next_game_time)
+            # TODO analyze all matchups at the current game time
+            next_game_time = get_next_game_time(schedule_file)
