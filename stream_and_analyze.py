@@ -31,15 +31,17 @@ def fork_stream(tags, twitter_account, data_path, stream_log):
         failures = 0
         while True:
             try:
-                log = "{:%Y-%B-%d}".format(datetime.now()) + " streaming...\n"
+                log = "{:%Y-%B-%d %H:%M}".format(datetime.now()) + " streaming...\n"
                 with open(stream_log, "a+", encoding='utf-8') as sl:
                     sl.write(log)
+                print(log)
                 stream(tags, twitter_account, data_path)
             except:
                 failures += 1
-                log = "{:%Y-%B-%d}".format(datetime.now()) + " stream failure " + str(failures) + "\n\n"
+                log = "{:%Y-%B-%d %H:%M}".format(datetime.now()) + " stream failure " + str(failures) + "\n\n"
                 with open(stream_log, "a+", encoding='utf-8') as sl:
                     sl.write(log)
+                print(log)
 
 def get_next_game_time(schedule_file):
     current_time = datetime.now()
