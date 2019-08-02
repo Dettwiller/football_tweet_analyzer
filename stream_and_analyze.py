@@ -26,7 +26,7 @@ def stream(tags, twitter_account, data_path):
     stream.filter(track=tags)
 
 def fork_stream(tags, twitter_account, data_path, stream_log):
-    newpid = os.fork()
+    newpid = os.fork() # TODO this does not work on windows
     if newpid == 0:
         failures = 0
         while True:
