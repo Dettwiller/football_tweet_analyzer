@@ -89,8 +89,15 @@ def get_matchups(schedule_file, current_game_time):
             game_line = sf.readline()
     return matchup_list
 
+def analyze_matchups(matchup_name_list, next_game_time, debug=False):
+    for m in matchup_name_list:
+        home_team = league[m[0]]
+        away_team = league[m[1]]
+        matchup = Matchup(home_team, away_team, next_game_time, debug=debug)
+        matchup.analyze(bot_account, threshold = 0.0, print_result = True, send_tweet = True)
+
 if __name__ == "__main__":
-    debug = True
+    debug = False
     stream_log_filename = "stream_status.txt"
     analysis_log_filename = "analysis_status.txt"
     schedule_filename = "clean_schedule.csv"
@@ -118,15 +125,16 @@ if __name__ == "__main__":
 
     if debug:
         matchup_name_list = get_matchups(schedule_file, next_game_time)
-        matchups = {}
-        for m in matchup_name_list:
-            home_team = league[m[0]]
-            away_team = league[m[1]]
-            matchup = Matchup(home_team, away_team, next_game_time, debug=debug)
-            matchup.analyze(bot_account, threshold = 0.0, print_result = True, send_tweet = True)
+        analyze_matchups(matchup_name_list, next_game_time, debug=debug)
     else:
-        while (datetime.now() - next_game_time).total_seconds() < 0:
-            # get_to_gametime(next_game_time, analysis_log_file)
+        while True:
+        # while (datetime.now() - next_game_time).total_seconds() < 0:
+            next_game_time = get_next_game_time(schedule_file)
+            get_to_gametime(next_game_time, analysis_log_file)
             matchup_list = get_matchups(schedule_file, next_game_time)
             # TODO analyze all matchups at the current game time
             next_game_time = get_next_game_time(schedule_file)
+            # TODO big error here: games don't always start an hour appart
+            # TODO get the full matchup list for that day
+            # TODO enter a new loop (in a new function) that loops through
+            # TODO all matchups for that day and analyzes them when it is time.
