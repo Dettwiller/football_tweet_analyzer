@@ -1,7 +1,7 @@
 from datetime import datetime
 
 class Matchup():
-    def __init__(self, home_team, away_team, game_time, debug = False):
+    def __init__(self, away_team, home_team, game_time, debug = False):
         # TODO input checking
         self.debug = debug
         self.name = home_team.name + "_v_" + away_team.name + "_" + game_time.strftime('%m-%d')
@@ -29,10 +29,19 @@ class Matchup():
         if send_tweet:
             twitter_account.api.update_status(win_line + stats_line)
 
+    def update_teams(self, league):
+        self.home_team = league[self.home_team.name]
+        self.away_team = league[self.away_team.name]
+
     def analyze(self, twitter_account, threshold = 0.0, print_result = False, send_tweet = True):
+
+
         home_sentiment_4day, home_sentiment_1day = self.home_team.analyze(self.game_time, threshold = threshold)
         away_sentiment_4day, away_sentiment_1day = self.away_team.analyze(self.game_time, threshold = threshold)
 
         home_swing = home_sentiment_1day - home_sentiment_4day
         away_swing = away_sentiment_4day - away_sentiment_1day
         self.__characterize(home_swing, away_swing, twitter_account, print_result, send_tweet)
+
+    def __bool__(self):
+        return True

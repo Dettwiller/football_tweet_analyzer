@@ -14,6 +14,49 @@ class Team():
         self.tags = twitter_tags
         self.lower_tag_list = [tag.lower() for tag in (''.join(twitter_tags)).split('#')[1:]]
 
+    def update_team_tweet_files(self):
+        today = datetime.now()
+        str_date = "{:%Y-%B-%d}".format(today)
+        team_tweets_file = self.team_data_path + os.sep + self.name + "_" + str_date + ".csv"
+        relevant_raw_tweet_files = []
+        if today.hour < 2:
+            yesterday = today - timedelta(days=1)
+            candidate_filename = "{:%Y-%B-%d}".format(yesterday) + ".csv"
+            if os.path.exists(os.path.join(self.raw_data_path, candidate_filename)):
+                relevant_raw_tweet_files += [candidate_filename]
+        candidate_filename = "{:%Y-%B-%d}".format(today) + ".csv"
+        if os.path.exists(os.path.join(self.raw_data_path, candidate_filename)):
+            relevant_raw_tweet_files += [candidate_filename]
+
+        ttf = open(team_tweets_file, "a+", encoding='utf-8', errors='ignore')
+        all_lines = ttf.readlines()
+        last_tweet_content = all_lines[-1].split(",")[1] # date and time, content, sentiment score
+        for relevant_tweet_file in relevant_raw_tweet_files:
+            with open(os.path.join(self.raw_data_path, relevant_tweet_file), "r", encoding = 'utf8', errors='ignore') as rtf:
+                line = rtf.readline() # user, content, hashtags, date
+                while line.split(",")[1] != last_tweet_content and line: # get to new tweets
+                    line = rtf.readline()
+                while line: # read until end of file
+                    line = rtf.readline()
+                    list_line = line.split(",")
+                    relevant_to_team = self.__determine_relevance_of_tweet(list_line)
+                    if relevant_to_team:
+                        tweet_sentiment = sentiment.get_tweet_sentiment(list_line[1])
+                        output_line = list_line[-1] + "," + list_line[1] + "," + str(tweet_sentiment) + "\n"
+                        ttf.write(output_line)
+        ttf.close()
+
+    def __determine_relevance_of_tweet(self, tweet_line_list):
+        relevant_to_team = False
+        clean_list_line = [list_line_i.rstrip("\n").lstrip(" ") for list_line_i in tweet_line_list]
+        if len(clean_list_line) == 4:
+            hashtags = clean_list_line[2].split(' ')
+            lower_tweet_list = [test_tag.lower() for test_tag in hashtags]
+            if any([tag in lower_tweet_list for tag in self.lower_tag_list]):
+                relevant_to_team = True
+        return relevant_to_team
+
+
     def __create_team_tweet_file(self, game_time, team_tweets_file):
         ttf = open(team_tweets_file, "w+", encoding='utf-8', errors='ignore')
         # get the raw tweets from the last 4 days
@@ -155,3 +198,27 @@ class Team():
         results_4day, results_1day = self.__sort_and_count(tweets_4day, tweets_1day, threshold)
         sentiment_4day, sentiment_1day = self.__team_sentiment(tweets_4day, tweets_1day, results_4day, results_1day)
         return sentiment_4day, sentiment_1day
+
+    def new_analyze(self, game_time, threshold = 0.0):
+        relevant_team_tweet_files = []
+        for i in range(1, 5):
+            relevant_day = game_time - timedelta(days=i)
+            candidate_filename = self.team_data_path + os.sep + self.name + "_" + "{:%Y-%B-%d}".format(relevant_day) + ".csv"
+            if os.path.exists(os.path.join(self.raw_data_path, candidate_filename)):
+                relevant_team_tweet_files += [candidate_filename]
+        average_4day_sentiment = 0.0
+        average_1day_sentiment = 0.0
+        positive_4day = 0
+        negative_4day = 0
+        positive_1day = 0
+        negative_1day = 0
+        greenwich_adjustment = timedelta(hours=5)
+        for team_tweet_file in relevant_team_tweet_files:
+            rtf = open(os.path.join(self.raw_data_path, relevant_tweet_file), "r", encoding = 'utf8', errors='ignore')
+            for line in rtf:
+                analyzed_tweet = line.split(",")
+                tweet_time = datetime.strptime(analyzed_tweet[0], '%Y-%m-%d %H:%M:%S') - greenwich_adjustment
+                time_till_game = int((game_time - tweet_time).days)
+                # TODO determine whether it is a 1day, 4day, or not considered
+                if time_till_game <
+            rtf.close()
