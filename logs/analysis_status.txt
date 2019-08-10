@@ -2,3 +2,21 @@ DEBUG: 2019-August-09 22:20 Going to sleep for 6 seconds!
     DEBUG: 1 seconds until analysis time!
 2019-August-09 22:22 Going to sleep for 21605 seconds!
     70654 seconds until analysis time!
+2019-August-10 04:22 Going to sleep for 21605 seconds!
+    49049 seconds until analysis time!
+2019-August-10 10:22 Going to sleep for 21605 seconds!
+    27429 seconds until analysis time!
+2019-August-10 16:22 Going to sleep for 5827 seconds!
+    5822 seconds until analysis time!
+2019-August-10 18:00 Going to sleep for 3584 seconds!
+    3579 seconds until analysis time!
+DEBUG: 2019-August-10 18:07 Going to sleep for 6 seconds!
+    DEBUG: 1 seconds until Kansas_City_Chiefs_v_Cincinnati_Bengals_08-10 analysis time!
+DEBUG: 2019-August-10 18:08 Going to sleep for 6 seconds!
+    DEBUG: 1 seconds until Kansas_City_Chiefs_v_Cincinnati_Bengals_08-10 analysis time!
+DEBUG: 2019-August-10 18:08 Going to sleep for 6 seconds!
+    DEBUG: 1 seconds until San_Francisco_49ers_v_Dallas_Cowboys_08-10 analysis time!
+DEBUG: 2019-August-10 18:09 Going to sleep for 6 seconds!
+    DEBUG: 1 seconds until Oakland_Raiders_v_Los_Angeles_Rams_08-10 analysis time!
+DEBUG: 2019-August-10 18:10 Going to sleep for 6 seconds!
+    DEBUG: 1 seconds until Kansas_City_Chiefs_v_Cincinnati_Bengals_08-10 analysis time!
