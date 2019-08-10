@@ -4,11 +4,13 @@ import tools
 from nfl_twitter_tags import nfl_tags_dict
 from team import Team
 import custom_twitter
+import time
 
 if __name__ == "__main__":
-    debug = False
+    debug = True
     analysis_log_filename = "analysis_status.txt"
-    schedule_filename = "clean_schedule.csv"
+    # schedule_filename = "clean_schedule.csv"
+    schedule_filename = "clean_schedule_with_preseason.csv"
     # The following bit of code is my solution to being able to test this without
     # my twitter account keys showing up in the code or having to remember to
     # delete them all the time.
@@ -19,20 +21,23 @@ if __name__ == "__main__":
 
     schedule_file = os.getcwd() + os.sep + "schedule" + os.sep + schedule_filename
     data_path = os.getcwd() + os.sep + "datafiles"
+    raw_data_path = data_path + os.sep + "raw"
+    analyzed_data_path = data_path + os.sep + "analyzed"
+    team_data_dir = data_path + os.sep + "team"
     league = {}
     for team_name in nfl_tags_dict:
-        league[team_name] = Team(team_name, nfl_tags_dict[team_name], data_path)
+        league[team_name] = Team(team_name, nfl_tags_dict[team_name], team_data_dir)
 
     analysis_log_file = os.getcwd() + os.sep + "logs" + os.sep + analysis_log_filename
-    next_matchup = tools.get_next_matchup(schedule_file)
+    next_matchup = tools.get_next_matchup(schedule_file, league, debug=debug)
 
     if debug:
-        next_matchup = tools.get_next_matchup(schedule_file, previous_matchup=next_matchup)
-        next_matchup.analyze(bot_account, threshold = 0.0, print_result = True, send_tweet = False)
+        next_matchup = tools.get_next_matchup(schedule_file, league, previous_matchup=next_matchup, debug=debug)
+        tools.get_to_analysis(next_matchup, analysis_log_file, raw_data_path, analyzed_data_path, debug=debug)
+        next_matchup.analyze(bot_account, analyzed_data_path, threshold = 0.0, print_result = True, send_tweet = False, debug=debug)
     else:
         while True:
         # while (datetime.now() - next_game_time).total_seconds() < 0:
-            next_matchup = tools.get_next_matchup(schedule_file, previous_matchup=next_matchup)
-            league = tools.get_to_analysis(next_matchup, analysis_log_file, league)
-            next_matchup.update_teams(league)
-            next_matchup.analyze(bot_account, threshold = 0.0, print_result = True, send_tweet = True)
+            next_matchup = tools.get_next_matchup(schedule_file, league, previous_matchup=next_matchup)
+            tools.get_to_analysis(next_matchup, analysis_log_file, raw_data_path, analyzed_data_path)
+            next_matchup.new_analyze(bot_account, analyzed_data_path, threshold = 0.0, print_result = True, send_tweet = True)

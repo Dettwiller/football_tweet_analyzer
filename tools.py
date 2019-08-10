@@ -5,6 +5,8 @@ import os
 from datetime import datetime, timedelta
 from time import sleep
 from matchup import Matchup
+import sentiment
+import time
 
 from nfl_twitter_tags import nfl_tags_dict
 
@@ -43,65 +45,77 @@ def fork_stream(tags, twitter_account, data_path, stream_log):
                     sl.write(log)
                 print(log)
 
-def create_matchup_from_schedule_line(schedule_line):
+def create_matchup_from_schedule_line(schedule_line, league):
     game_list_line = schedule_line.strip().split(",")
     game_time_str = "".join(game_list_line[:2])
     # subtract an hour to get to central time
     game_time = datetime.strptime(game_time_str, '%m/%d/%Y %H:%M') - timedelta(hours=1)
-    matchup = Matchup(game_list_line[2].strip(), game_list_line[3].strip(), game_time)
+    matchup = Matchup(league[game_list_line[2].strip()], league[game_list_line[3].strip()], game_time)
     return matchup
 
-def get_next_matchup(schedule_file, previous_matchup=False):
+def get_next_matchup(schedule_file, league, previous_matchup=False, debug=False):
+    if debug:
+        timing_start = time.time()
+        print("entered tools.get_next_matchup")
     current_time = datetime.now()
     with open(schedule_file, "r", encoding='utf-8') as sf:
         sf.readline() # waste the header
         game_line = sf.readline()
-        matchup = create_matchup_from_schedule_line(game_line)
+        matchup = create_matchup_from_schedule_line(game_line, league)
         if previous_matchup:
             while matchup.name != previous_matchup.name:
                 game_line = sf.readline()
-                matchup = create_matchup_from_schedule_line(game_line)
+                matchup = create_matchup_from_schedule_line(game_line, league)
             game_line = sf.readline()
-            matchup = create_matchup_from_schedule_line(game_line)
+            matchup = create_matchup_from_schedule_line(game_line, league)
         else:
             while (current_time - matchup.game_time).total_seconds() > 0 and game_line:
                 game_line = sf.readline()
-                matchup = create_matchup_from_schedule_line(game_line)
+                matchup = create_matchup_from_schedule_line(game_line, league)
+    if debug:
+        time_elapsed = time.time() - timing_start
+        print("tools.get_next_matchup completed in " + "{0:.4f}".format(time_elapsed))
     return matchup
 
-def get_to_analysis(next_matchup, log_file, league):
+def get_to_analysis(next_matchup, log_file, raw_data_path, analyzed_data_path, debug=False):
+    if debug:
+        timing_start = time.time()
+        print("entered tools.get_to_analysis")
     extra_delay = 5 # seconds
     one_hour = 60 * 60 # 60 seconds / minute * 60 minutes / hour
     current_time = datetime.now()
-    seconds_until_gametime = int((next_matchup.game_time- current_time).total_seconds())
-    while seconds_until_gametime > one_hour:
-        sleep_time = int(min(one_hour, seconds_until_gametime))
-        log = "{:%Y-%B-%d %H:%M}".format(current_time) + " Going to sleep for " + str(sleep_time + extra_delay) + " seconds!\n"
-        log += "    " + str(seconds_until_gametime) + " seconds until gametime!\n"
+    if debug:
+        seconds_until_analysis = 1
+    else:
+        seconds_until_analysis = int((next_matchup.game_time- current_time).total_seconds()) - one_hour # analyze an hour before kickoff
+    while seconds_until_analysis > 0:
+        sleep_time = int(min(6 * one_hour, seconds_until_analysis))
+        if debug:
+            log = "DEBUG: " + "{:%Y-%B-%d %H:%M}".format(current_time) + " Going to sleep for " + str(sleep_time + extra_delay) + " seconds!\n"
+            log += "    DEBUG: " + str(seconds_until_analysis) + " seconds until analysis time!\n"
+        else:
+            log = "{:%Y-%B-%d %H:%M}".format(current_time) + " Going to sleep for " + str(sleep_time + extra_delay) + " seconds!\n"
+            log += "    " + str(seconds_until_analysis) + " seconds until analysis time!\n"
         with open(log_file, "a+", encoding='utf-8') as lf:
             lf.write(log)
         sleep(sleep_time)
         sleep(extra_delay)
         current_time = datetime.now()
-        for team_name in league:
-            league[team_name].update_team_tweet_files()
-        seconds_until_gametime = int((next_matchup.game_time - current_time).total_seconds())
-    return league
+        sentiment.analyze_raw_files(raw_data_path, analyzed_data_path)
+        if debug:
+            seconds_until_analysis = -1
+        else:
+            seconds_until_analysis = int((next_matchup.game_time - current_time).total_seconds()) - one_hour # analyze an hour before kickoff
+    if debug:
+        time_elapsed = time.time() - timing_start
+        print("tools.get_to_analysis completed in " + "{0:.4f}".format(time_elapsed))
 
-# def get_matchups(schedule_file, current_game_time):
-#     # add an hour to get back to eastern time
-#     current_game_time = current_game_time + timedelta(hours=1)
-#     current_date_str = current_game_time.strftime('%m/%d/%Y')
-#     current_time_str = current_game_time.strftime('%H:%M')
-#     matchup_list = []
-#     with open(schedule_file, "r", encoding='utf-8') as sf:
-#         sf.readline() # waste the header
-#         game_line = sf.readline()
-#         while game_line:
-#             game_line_list = [text.strip() for text in game_line.strip().split(",")]
-#             correct_day = game_line_list[0] == current_date_str
-#             correct_time = game_line_list[1] == current_time_str
-#             if correct_day and correct_time:
-#                 matchup_list.append([game_line_list[2].strip(), game_line_list[3].strip()])
-#             game_line = sf.readline()
-#     return matchup_list
+def get_dated_files(file_directory, terminating_time, start_time = datetime(2019, 8, 2)):
+    files = []
+    while (terminating_time - start_time).days >= 0:
+        candidate_filename = "{:%Y-%B-%d}".format(start_time) + ".csv"
+        if os.path.exists(os.path.join(file_directory, candidate_filename)):
+            files += [candidate_filename]
+        start_time += timedelta(days=1)
+    return files
+
