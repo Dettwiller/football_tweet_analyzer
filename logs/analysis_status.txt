@@ -20,3 +20,9 @@ DEBUG: 2019-August-10 18:09 Going to sleep for 6 seconds!
     DEBUG: 1 seconds until Oakland_Raiders_v_Los_Angeles_Rams_08-10 analysis time!
 DEBUG: 2019-August-10 18:10 Going to sleep for 6 seconds!
     DEBUG: 1 seconds until Kansas_City_Chiefs_v_Cincinnati_Bengals_08-10 analysis time!
+DEBUG: 2019-August-10 18:11 Going to sleep for 6 seconds!
+    DEBUG: 1 seconds until Oakland_Raiders_v_Los_Angeles_Rams_08-10 analysis time!
+2019-August-10 18:11 Going to sleep for 201 seconds!
+    196 seconds until analysis time!
+2019-August-10 18:13 Going to sleep for 103 seconds!
+    98 seconds until Oakland_Raiders_v_Los_Angeles_Rams_08-10 analysis time!

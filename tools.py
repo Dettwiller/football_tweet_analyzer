@@ -95,7 +95,7 @@ def get_to_analysis(next_matchup, log_file, raw_data_path, analyzed_data_path, d
             log += "    DEBUG: " + str(seconds_until_analysis) + " seconds until " + next_matchup.name + " analysis time!\n"
         else:
             log = "{:%Y-%B-%d %H:%M}".format(current_time) + " Going to sleep for " + str(sleep_time + extra_delay) + " seconds!\n"
-            log += "    " + str(seconds_until_analysis) + " seconds until analysis time!\n"
+            log += "    " + str(seconds_until_analysis) + " seconds until " + next_matchup.name + " analysis time!\n"
         with open(log_file, "a+", encoding='utf-8') as lf:
             lf.write(log)
         print(log)

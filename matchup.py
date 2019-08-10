@@ -15,8 +15,8 @@ class Matchup():
             timing_start = time.time()
             print("entered matchup.Matchup.__characterize")
         stats_line = ""
-        stats_line += "home swing: " + f"{home_swing:.{4}}" + "\n"
-        stats_line += "away swing: " + f"{away_swing:.{4}}"
+        stats_line += self.home_team.name + " swing: " + f"{home_swing:.{4}}" + "\n"
+        stats_line += self.away_team.name + " swing: " + f"{away_swing:.{4}}"
 
         if home_swing >= away_swing:
             win_line = self.home_team.name + " predicted win at " + datetime.now().strftime("%H:%M:%S") + "\n"

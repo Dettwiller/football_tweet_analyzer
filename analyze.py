@@ -7,7 +7,8 @@ import custom_twitter
 import time
 
 if __name__ == "__main__":
-    debug = True
+    debug = False
+    tweet = True
     analysis_log_filename = "analysis_status.txt"
     schedule_filename = "clean_schedule_with_preseason.csv"
     # The following bit of code is my solution to being able to test this without
@@ -33,6 +34,6 @@ if __name__ == "__main__":
     running = True
     while running:
         tools.get_to_analysis(next_matchup, analysis_log_file, raw_data_path, analyzed_data_path, debug=debug)
-        next_matchup.analyze(bot_account, analyzed_data_path, threshold = 0.1, print_result = True, send_tweet = False, debug=debug)
+        next_matchup.analyze(bot_account, analyzed_data_path, threshold = 0.1, print_result = True, send_tweet = tweet, debug=debug)
         next_matchup = tools.get_next_matchup(schedule_file, league, previous_matchup=next_matchup, debug=debug)
-        # running = not debug
+        running = not debug
