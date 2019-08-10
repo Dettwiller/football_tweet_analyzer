@@ -7,9 +7,8 @@ import custom_twitter
 import time
 
 if __name__ == "__main__":
-    debug = True
+    debug = False
     analysis_log_filename = "analysis_status.txt"
-    # schedule_filename = "clean_schedule.csv"
     schedule_filename = "clean_schedule_with_preseason.csv"
     # The following bit of code is my solution to being able to test this without
     # my twitter account keys showing up in the code or having to remember to
@@ -31,13 +30,9 @@ if __name__ == "__main__":
     analysis_log_file = os.getcwd() + os.sep + "logs" + os.sep + analysis_log_filename
     next_matchup = tools.get_next_matchup(schedule_file, league, debug=debug)
 
-    if debug:
+    running = True
+    while running:
         next_matchup = tools.get_next_matchup(schedule_file, league, previous_matchup=next_matchup, debug=debug)
         tools.get_to_analysis(next_matchup, analysis_log_file, raw_data_path, analyzed_data_path, debug=debug)
-        next_matchup.analyze(bot_account, analyzed_data_path, threshold = 0.0, print_result = True, send_tweet = False, debug=debug)
-    else:
-        while True:
-        # while (datetime.now() - next_game_time).total_seconds() < 0:
-            next_matchup = tools.get_next_matchup(schedule_file, league, previous_matchup=next_matchup)
-            tools.get_to_analysis(next_matchup, analysis_log_file, raw_data_path, analyzed_data_path)
-            next_matchup.new_analyze(bot_account, analyzed_data_path, threshold = 0.0, print_result = True, send_tweet = True)
+        next_matchup.analyze(bot_account, analyzed_data_path, threshold = 0.1, print_result = True, send_tweet = True, debug=debug)
+        running = not debug

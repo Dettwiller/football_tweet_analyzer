@@ -98,6 +98,7 @@ def get_to_analysis(next_matchup, log_file, raw_data_path, analyzed_data_path, d
             log += "    " + str(seconds_until_analysis) + " seconds until analysis time!\n"
         with open(log_file, "a+", encoding='utf-8') as lf:
             lf.write(log)
+        print(log)
         sleep(sleep_time)
         sleep(extra_delay)
         current_time = datetime.now()
