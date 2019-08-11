@@ -19,6 +19,11 @@ if __name__ == "__main__":
 
     bot_account = custom_twitter.TwitterAccount(bot_token_list[0], bot_token_list[1], bot_token_list[2], bot_token_list[3])
 
+    # temporary lines
+    # temp_data_path = "C:" + os.sep + "Users" + os.sep + "User" + os.sep + "Documents" + os.sep + "NFL_twitter_analysis" + os.sep + "datafiles_2019"
+    # bert_analyzed_data_path = temp_data_path + os.sep + "bert_analyzed"
+
+    bert_data_path = "C:" + os.sep  + "Users" + os.sep  + "User" + os.sep  + "Documents" + os.sep  + "NFL_twitter_analysis" + os.sep  + "bert_data"
     schedule_file = os.getcwd() + os.sep + "schedule" + os.sep + schedule_filename
     # data_path = os.getcwd() + os.sep + "datafiles"
     data_path = "C:" + os.sep + "Users" + os.sep + "User" + os.sep + "Documents" + os.sep + "NFL_twitter_analysis" + os.sep + "datafiles_2019"
@@ -39,7 +44,8 @@ if __name__ == "__main__":
 
     running = True
     while running:
-        tools.get_to_analysis(next_matchup, analysis_log_file, raw_data_path, analyzed_data_path, debug=debug)
-        next_matchup.analyze(bot_account, analyzed_data_path, threshold = 0.1, print_result = True, send_tweet = tweet, debug=debug)
+        tools.get_to_analysis(next_matchup, analysis_log_file, raw_data_path, analyzed_data_path, bert_data_path=bert_data_path, debug=debug)
+        # next_matchup.analyze(bot_account, bert_analyzed_data_path, print_result = True, send_tweet = tweet, debug=debug)
+        next_matchup.analyze(bot_account, analyzed_data_path, print_result = True, send_tweet = tweet, debug=debug)
         next_matchup = tools.get_next_matchup(schedule_file, league, previous_matchup=next_matchup, debug=debug)
         running = not debug

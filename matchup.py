@@ -49,12 +49,12 @@ class Matchup():
             time_elapsed = time.time() - timing_start
             print("matchup.Matchup.__characterize completed in " + "{0:.4f}".format(time_elapsed))
 
-    def analyze(self, twitter_account, analyzed_data_path, threshold = 0.0, print_result = False, send_tweet = True, debug=False):
+    def analyze(self, twitter_account, analyzed_data_path, print_result = False, send_tweet = True, debug=False):
         if debug:
             timing_start = time.time()
             print("entered matchup.Matchup.analyze")
-        home_sentiment_4day, home_sentiment_1day = self.home_team.analyze(self.game_time, analyzed_data_path, threshold=threshold, debug=debug)
-        away_sentiment_4day, away_sentiment_1day = self.away_team.analyze(self.game_time, analyzed_data_path, threshold=threshold, debug=debug)
+        home_sentiment_4day, home_sentiment_1day = self.home_team.analyze(self.game_time, analyzed_data_path, debug=debug)
+        away_sentiment_4day, away_sentiment_1day = self.away_team.analyze(self.game_time, analyzed_data_path, debug=debug)
         home_swing = home_sentiment_1day - home_sentiment_4day
         away_swing = away_sentiment_1day - away_sentiment_4day
         self.__characterize(home_swing, away_swing, twitter_account, print_result, send_tweet, debug)

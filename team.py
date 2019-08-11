@@ -60,7 +60,7 @@ class Team():
         plt.tight_layout()
         plt.savefig(figure_file)
 
-    def analyze(self, game_time, analyzed_data_path, threshold = 0.0, start_date = datetime(2019, 8, 2), debug=False):
+    def analyze(self, game_time, analyzed_data_path, start_date = datetime(2019, 8, 2), debug=False):
         if debug:
             timing_start = time.time()
             print("entered team.Team.analyze")

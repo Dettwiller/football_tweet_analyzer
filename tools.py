@@ -77,7 +77,7 @@ def get_next_matchup(schedule_file, league, previous_matchup=False, debug=False)
         print("tools.get_next_matchup completed in " + "{0:.4f}".format(time_elapsed))
     return matchup
 
-def get_to_analysis(next_matchup, log_file, raw_data_path, analyzed_data_path, debug=False):
+def get_to_analysis(next_matchup, log_file, raw_data_path, analyzed_data_path, bert_data_path = "", debug=False):
     if debug:
         timing_start = time.time()
         print("entered tools.get_to_analysis")
@@ -102,7 +102,19 @@ def get_to_analysis(next_matchup, log_file, raw_data_path, analyzed_data_path, d
         sleep(sleep_time)
         sleep(extra_delay)
         current_time = datetime.now()
-        sentiment.analyze_raw_files(raw_data_path, analyzed_data_path)
+        # permanent code (uncomment please)
+        if bert_data_path:
+            sentiment.bert_analyze_raw_files(raw_data_path, analyzed_data_path, bert_data_path)
+        else:
+            sentiment.analyze_raw_files(raw_data_path, analyzed_data_path)
+
+        # temporary code
+        # if debug:
+        #     temp_data_path = "C:" + os.sep + "Users" + os.sep + "User" + os.sep + "Documents" + os.sep + "NFL_twitter_analysis" + os.sep + "datafiles_2019"
+        #     bert_analyzed_data_path = temp_data_path + os.sep + "bert_analyzed"
+        #     sentiment.bert_analyze_raw_files(raw_data_path, bert_analyzed_data_path, bert_data_path)
+        #     sentiment.analyze_raw_files(raw_data_path, analyzed_data_path)
+
         if debug:
             seconds_until_analysis = -1
         else:
@@ -119,4 +131,3 @@ def get_dated_files(file_directory, terminating_time, start_time = datetime(2019
             files += [candidate_filename]
         start_time += timedelta(days=1)
     return files
-
