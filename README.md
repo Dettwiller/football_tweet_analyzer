@@ -2,6 +2,9 @@
 Sentiment analysis for college football tweets
 
 
-This code is a messy prototype for proof of concept. Heavy refactoring is expected.
+This code is a rough program for streaming and analyzing twitter data for NFL football games and matchups.
 
-You will need to enter you twitter accounts keys in the twitter.py script to send tweets
+Note:
+stream_and_analyze.py currently does not work for Windows, as os.fork() is not supported.
+
+This documentation sucks because it is largely a personal project and I apologize. If you're interested in anything about it, please contact me.
