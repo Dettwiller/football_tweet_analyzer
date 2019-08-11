@@ -53,5 +53,5 @@ if __name__ == "__main__":
     for team_name in nfl_tags_dict:
         nfl_tags += nfl_tags_dict[team_name]
 
-    stream_log = os.getcwd() + os.sep + "logs" + os.sep + stream_log_filename
+    stream_log = "C:" + os.sep + "Users" + os.sep + "User" + os.sep + "Documents" + os.sep + "NFL_twitter_analysis" + os.sep + "logs" + os.sep + stream_log_filename
     launch_stream(nfl_tags, bot_account, data_path, stream_log)

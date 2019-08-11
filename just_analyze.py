@@ -29,7 +29,7 @@ if __name__ == "__main__":
     for team_name in nfl_tags_dict:
         league[team_name] = Team(team_name, nfl_tags_dict[team_name], team_data_dir)
 
-    analysis_log_file = os.getcwd() + os.sep + "logs" + os.sep + analysis_log_filename
+    analysis_log_file = "C:" + os.sep + "Users" + os.sep + "User" + os.sep + "Documents" + os.sep + "NFL_twitter_analysis" + os.sep + "logs" + os.sep + analysis_log_filename
     next_matchup = tools.get_next_matchup(schedule_file, league, debug=debug)
 
     running = True

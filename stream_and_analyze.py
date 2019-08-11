@@ -31,10 +31,10 @@ if __name__ == "__main__":
         nfl_tags += nfl_tags_dict[team_name]
         league[team_name] = Team(team_name, nfl_tags_dict[team_name], data_path)
 
-    stream_log = os.getcwd() + os.sep + "logs" + os.sep + stream_log_filename
+    stream_log = "C:" + os.sep + "Users" + os.sep + "User" + os.sep + "Documents" + os.sep + "NFL_twitter_analysis" + os.sep + "logs" + os.sep + stream_log_filename
     # fork_stream(nfl_tags, bot_account, data_path, stream_log) # uncomment this line to launch stream
 
-    analysis_log_file = os.getcwd() + os.sep + "logs" + os.sep + analysis_log_filename
+    analysis_log_file = "C:" + os.sep + "Users" + os.sep + "User" + os.sep + "Documents" + os.sep + "NFL_twitter_analysis" + os.sep + "logs" + os.sep + analysis_log_filename
     next_matchup = tools.get_next_matchup(schedule_file, league, debug=debug)
 
     running = True
