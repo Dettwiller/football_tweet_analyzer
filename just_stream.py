@@ -46,7 +46,8 @@ if __name__ == "__main__":
     personal_token_list, bot_token_list = get_tokens(token_file)
 
     bot_account = custom_twitter.TwitterAccount(bot_token_list[0], bot_token_list[1], bot_token_list[2], bot_token_list[3])
-    data_path = os.getcwd() + os.sep + "datafiles"
+    # data_path = os.getcwd() + os.sep + "datafiles"
+    data_path = "C:" + os.sep + "Users" + os.sep + "User" + os.sep + "Documents" + os.sep + "NFL_twitter_analysis" + os.sep + "datafiles_2019"
     nfl_tags = []
     league = {}
     for team_name in nfl_tags_dict:

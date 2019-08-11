@@ -26,3 +26,15 @@ DEBUG: 2019-August-10 18:11 Going to sleep for 6 seconds!
     196 seconds until analysis time!
 2019-August-10 18:13 Going to sleep for 103 seconds!
     98 seconds until Oakland_Raiders_v_Los_Angeles_Rams_08-10 analysis time!
+2019-August-10 18:15 Going to sleep for 2685 seconds!
+    2680 seconds until San_Francisco_49ers_v_Dallas_Cowboys_08-10 analysis time!
+2019-August-10 19:00 Going to sleep for 21605 seconds!
+    424785 seconds until Jacksonville_Jaguars_v_Philadelphia_Eagles_08-15 analysis time!
+2019-August-11 01:00 Going to sleep for 21605 seconds!
+    403180 seconds until Jacksonville_Jaguars_v_Philadelphia_Eagles_08-15 analysis time!
+2019-August-11 07:00 Going to sleep for 21605 seconds!
+    381564 seconds until Jacksonville_Jaguars_v_Philadelphia_Eagles_08-15 analysis time!
+2019-August-11 13:00 Going to sleep for 21605 seconds!
+    359958 seconds until Jacksonville_Jaguars_v_Philadelphia_Eagles_08-15 analysis time!
+2019-August-11 14:45 Going to sleep for 21605 seconds!
+    353662 seconds until Jacksonville_Jaguars_v_Philadelphia_Eagles_08-15 analysis time!
