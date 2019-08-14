@@ -1,4 +1,4 @@
-date, time (ET), away, home, analyzed
+date, time (ET), away, home
 08/08/2019, 19:00, New York Jets, New York Giants
 08/08/2019, 19:00, Indianapolis Colts, Buffalo Bills
 08/08/2019, 19:30, Jacksonville Jaguars, Baltimore Ravens
@@ -31,6 +31,38 @@ date, time (ET), away, home, analyzed
 08/18/2019, 16:00, New Orleans Saints, Los Angeles Chargers
 08/18/2019, 20:00, Seattle Seahawks, Minnesota Vikings
 08/19/2019, 20:00, San Francisco 49ers, Denver Broncos
+08/22/2019, 19:00, New York Giants, Cincinnati Bengals
+08/22/2019, 19:30, Washington Redskins, Atlanta Falcons
+08/22/2019, 19:30, Carolina Panthers, New England Patriots
+08/22/2019, 19:30, Baltimore Ravens, Philadelphia Eagles
+08/22/2019, 20:00, Jacksonville Jaguars, Miami Dolphins
+08/22/2019, 20:00, Green Bay Packers, Oakland Raiders
+08/23/2019, 19:30, Cleveland Browns, Tampa Bay Buccaneers
+08/23/2019, 20:00, Buffalo Bills, Detroit Lions
+08/24/2019, 13:00, Arizona Cardinals, Minnesota Vikings
+08/24/2019, 19:00, Houston Texans, Dallas, Cowboys
+08/24/2019, 19:00, Chicago Bears, Indianapolis Colts
+08/24/2019, 19:30, New Orleans Saints, New York Jets
+08/24/2019, 20:00, San Francisco 49ers, Kansas City Chiefs
+08/24/2019, 21:00, Denver Broncos, Los Angeles Rams
+08/24/2019, 22:00, Seattle Seahawks, Los Angeles Chargers
+08/25/2019, 20:00, Pittsburgh Steelers, Tennessee Titans
+08/29/2019, 19:00, Minnesota Vikings, Buffalo Bills
+08/29/2019, 19:00, Pittsburgh Steelers, Carolina Panthers
+08/29/2019, 19:00, Indianapolis Colts, Cincinnati Bengals
+08/29/2019, 19:00, Atlanta Falcons, Jacksonville Jaguars
+08/29/2019, 19:00, Philadelphia Eagles, New York Jets
+08/29/2019, 19:30, Detroit Lions, Cleveland Browns
+08/29/2019, 19:30, New York Giants, New England Patriots
+08/29/2019, 19:30, Baltimore Ravens, Washington Redskins
+08/29/2019, 20:00, Tennessee Titans, Chicago Bears
+08/29/2019, 20:00, Tampa Bay Buccaneers, Dallas Cowboys
+08/29/2019, 20:00, Kansas City Chiefs, Green Bay Packers
+08/29/2019, 20:00, Los Angeles Rams, Houston Texans
+08/29/2019, 20:00, Miama Dolphins, New Orleans Saints
+08/29/2019, 21:00, Arizona Cardinals, Denver Broncos
+08/29/2019, 22:00, Los Angeles Chargers, San Francisco 49ers
+08/29/2019, 22:00, Oakland Raiders, Seattle Seahawks
 09/05/2019, 20:20, Green Bay Packers, Chicago Bears
 09/08/2019, 13:00, Atlanta Falcons, Minnesota Vikings
 09/08/2019, 13:00, Baltimore Ravens, Miami Dolphins
