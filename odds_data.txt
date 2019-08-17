@@ -1,0 +1,2212 @@
+[
+    {
+        "events": [
+            {
+                "awayTeamFirst": true,
+                "competitionId": "25146",
+                "competitors": [
+                    {
+                        "home": true,
+                        "id": "5565182-11904218",
+                        "name": "New York Giants"
+                    },
+                    {
+                        "home": false,
+                        "id": "5565182-11903832",
+                        "name": "Chicago Bears"
+                    }
+                ],
+                "denySameGame": "NO",
+                "description": "Chicago Bears @ New York Giants",
+                "displayGroups": [
+                    {
+                        "alternateType": false,
+                        "defaultType": true,
+                        "description": "Game Lines",
+                        "id": "100-41",
+                        "markets": [
+                            {
+                                "description": "Moneyline",
+                                "id": "86329398",
+                                "key": "2W-12",
+                                "marketTypeId": "11",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "competitorId": "5565182-11903832",
+                                        "description": "Chicago Bears",
+                                        "id": "460538684",
+                                        "price": {
+                                            "american": "+1700",
+                                            "decimal": "18.00",
+                                            "fractional": "17/1",
+                                            "hongkong": "17.00",
+                                            "id": "3292927081",
+                                            "indonesian": "17.00",
+                                            "malay": "-0.06"
+                                        },
+                                        "status": "S",
+                                        "type": "A"
+                                    },
+                                    {
+                                        "competitorId": "5565182-11904218",
+                                        "description": "New York Giants",
+                                        "id": "460538685",
+                                        "price": {
+                                            "american": "-10000",
+                                            "decimal": "1.010",
+                                            "fractional": "1/100",
+                                            "hongkong": "0.01",
+                                            "id": "3292927082",
+                                            "indonesian": "-100.00",
+                                            "malay": "0.01"
+                                        },
+                                        "status": "S",
+                                        "type": "H"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Live Match",
+                                    "id": "251",
+                                    "live": true,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "S"
+                            },
+                            {
+                                "description": "Point Spread",
+                                "id": "86329397",
+                                "key": "2W-HCAP",
+                                "marketTypeId": "120718",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "competitorId": "5565182-11903832",
+                                        "description": "Chicago Bears",
+                                        "id": "460538682",
+                                        "price": {
+                                            "american": "+175",
+                                            "decimal": "2.750",
+                                            "fractional": "7/4",
+                                            "handicap": "18.5",
+                                            "hongkong": "1.75",
+                                            "id": "3292969440",
+                                            "indonesian": "1.75",
+                                            "malay": "-0.57"
+                                        },
+                                        "status": "O",
+                                        "type": "A"
+                                    },
+                                    {
+                                        "competitorId": "5565182-11904218",
+                                        "description": "New York Giants",
+                                        "id": "460538683",
+                                        "price": {
+                                            "american": "-250",
+                                            "decimal": "1.400",
+                                            "fractional": "2/5",
+                                            "handicap": "-18.5",
+                                            "hongkong": "0.40",
+                                            "id": "3292969441",
+                                            "indonesian": "-2.50",
+                                            "malay": "0.40"
+                                        },
+                                        "status": "O",
+                                        "type": "H"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Live Match",
+                                    "id": "251",
+                                    "live": true,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "S"
+                            },
+                            {
+                                "description": "Total",
+                                "id": "86329399",
+                                "key": "2W-OU",
+                                "marketTypeId": "120717",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "description": "Over",
+                                        "id": "460538687",
+                                        "price": {
+                                            "american": "+130",
+                                            "decimal": "2.300",
+                                            "fractional": "13/10",
+                                            "handicap": "45.5",
+                                            "hongkong": "1.30",
+                                            "id": "3292927070",
+                                            "indonesian": "1.30",
+                                            "malay": "-0.77"
+                                        },
+                                        "status": "O",
+                                        "type": "O"
+                                    },
+                                    {
+                                        "description": "Under",
+                                        "id": "460538686",
+                                        "price": {
+                                            "american": "-185",
+                                            "decimal": "1.540541",
+                                            "fractional": "20/37",
+                                            "handicap": "45.5",
+                                            "hongkong": "0.54",
+                                            "id": "3292927071",
+                                            "indonesian": "-1.85",
+                                            "malay": "0.54"
+                                        },
+                                        "status": "O",
+                                        "type": "U"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Live Match",
+                                    "id": "251",
+                                    "live": true,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "S"
+                            }
+                        ],
+                        "order": 1
+                    }
+                ],
+                "id": "5565182",
+                "lastModified": 1566008932470,
+                "link": "/football/nfl-preseason/chicago-bears-new-york-giants-201908161930",
+                "live": true,
+                "notes": "",
+                "numMarkets": 3,
+                "sport": "FOOT",
+                "startTime": 1565998200000,
+                "status": "O",
+                "teaserAllowed": true,
+                "type": "GAMEEVENT"
+            },
+            {
+                "awayTeamFirst": true,
+                "competitionId": "25146",
+                "competitors": [
+                    {
+                        "home": true,
+                        "id": "5565163-11904232",
+                        "name": "Indianapolis Colts"
+                    },
+                    {
+                        "home": false,
+                        "id": "5565163-11904219",
+                        "name": "Cleveland Browns"
+                    }
+                ],
+                "denySameGame": "NO",
+                "description": "Cleveland Browns @ Indianapolis Colts",
+                "displayGroups": [
+                    {
+                        "alternateType": false,
+                        "defaultType": true,
+                        "description": "Game Lines",
+                        "id": "100-41",
+                        "markets": [
+                            {
+                                "description": "Moneyline",
+                                "id": "84958150",
+                                "key": "2W-12",
+                                "marketTypeId": "11",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "competitorId": "5565163-11904219",
+                                        "description": "Cleveland Browns",
+                                        "id": "453517299",
+                                        "price": {
+                                            "american": "+130",
+                                            "decimal": "2.300",
+                                            "fractional": "13/10",
+                                            "hongkong": "1.30",
+                                            "id": "3289155502",
+                                            "indonesian": "1.30",
+                                            "malay": "-0.77"
+                                        },
+                                        "status": "O",
+                                        "type": "A"
+                                    },
+                                    {
+                                        "competitorId": "5565163-11904232",
+                                        "description": "Indianapolis Colts",
+                                        "id": "453517300",
+                                        "price": {
+                                            "american": "-150",
+                                            "decimal": "1.666667",
+                                            "fractional": "2/3",
+                                            "hongkong": "0.67",
+                                            "id": "3289155503",
+                                            "indonesian": "-1.50",
+                                            "malay": "0.67"
+                                        },
+                                        "status": "O",
+                                        "type": "H"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Match",
+                                    "id": "119",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "O"
+                            },
+                            {
+                                "description": "Point Spread",
+                                "id": "84958148",
+                                "key": "2W-HCAP",
+                                "marketTypeId": "120718",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "competitorId": "5565163-11904219",
+                                        "description": "Cleveland Browns",
+                                        "id": "453517311",
+                                        "price": {
+                                            "american": "-125",
+                                            "decimal": "1.800",
+                                            "fractional": "4/5",
+                                            "handicap": "3.0",
+                                            "hongkong": "0.80",
+                                            "id": "3291724068",
+                                            "indonesian": "-1.25",
+                                            "malay": "0.80"
+                                        },
+                                        "status": "O",
+                                        "type": "A"
+                                    },
+                                    {
+                                        "competitorId": "5565163-11904232",
+                                        "description": "Indianapolis Colts",
+                                        "id": "453517312",
+                                        "price": {
+                                            "american": "+105",
+                                            "decimal": "2.050",
+                                            "fractional": "21/20",
+                                            "handicap": "-3.0",
+                                            "hongkong": "1.05",
+                                            "id": "3291724069",
+                                            "indonesian": "1.05",
+                                            "malay": "-0.95"
+                                        },
+                                        "status": "O",
+                                        "type": "H"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Match",
+                                    "id": "119",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "O"
+                            },
+                            {
+                                "description": "Total",
+                                "id": "84958154",
+                                "key": "2W-OU",
+                                "marketTypeId": "120717",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "description": "Over",
+                                        "id": "453517305",
+                                        "price": {
+                                            "american": "-110",
+                                            "decimal": "1.909091",
+                                            "fractional": "10/11",
+                                            "handicap": "43.0",
+                                            "hongkong": "0.91",
+                                            "id": "3264830558",
+                                            "indonesian": "-1.10",
+                                            "malay": "0.91"
+                                        },
+                                        "status": "O",
+                                        "type": "O"
+                                    },
+                                    {
+                                        "description": "Under",
+                                        "id": "453517306",
+                                        "price": {
+                                            "american": "-110",
+                                            "decimal": "1.909091",
+                                            "fractional": "10/11",
+                                            "handicap": "43.0",
+                                            "hongkong": "0.91",
+                                            "id": "3264830559",
+                                            "indonesian": "-1.10",
+                                            "malay": "0.91"
+                                        },
+                                        "status": "O",
+                                        "type": "U"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Match",
+                                    "id": "119",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "O"
+                            }
+                        ],
+                        "order": 1
+                    },
+                    {
+                        "alternateType": false,
+                        "defaultType": false,
+                        "description": "Score Props",
+                        "id": "100-62",
+                        "markets": [
+                            {
+                                "description": "Odd/Even Total Points",
+                                "id": "85944136",
+                                "key": "2W-OE",
+                                "marketTypeId": "178",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "description": "Even",
+                                        "id": "458236771",
+                                        "price": {
+                                            "american": "+110",
+                                            "decimal": "2.100",
+                                            "fractional": "11/10",
+                                            "hongkong": "1.10",
+                                            "id": "3265567344",
+                                            "indonesian": "1.10",
+                                            "malay": "-0.91"
+                                        },
+                                        "status": "O",
+                                        "type": "EV"
+                                    },
+                                    {
+                                        "description": "Odd",
+                                        "id": "458236772",
+                                        "price": {
+                                            "american": "-140",
+                                            "decimal": "1.714286",
+                                            "fractional": "5/7",
+                                            "hongkong": "0.71",
+                                            "id": "3265567345",
+                                            "indonesian": "-1.40",
+                                            "malay": "0.71"
+                                        },
+                                        "status": "O",
+                                        "type": "OD"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Match",
+                                    "id": "119",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "O"
+                            }
+                        ],
+                        "order": 6
+                    }
+                ],
+                "id": "5565163",
+                "lastModified": 1566003383596,
+                "link": "/football/nfl-preseason/cleveland-browns-indianapolis-colts-201908171600",
+                "live": false,
+                "notes": "",
+                "numMarkets": 4,
+                "sport": "FOOT",
+                "startTime": 1566072000000,
+                "status": "U",
+                "teaserAllowed": true,
+                "type": "GAMEEVENT"
+            },
+            {
+                "awayTeamFirst": true,
+                "competitionId": "25146",
+                "competitors": [
+                    {
+                        "home": true,
+                        "id": "5565166-11904229",
+                        "name": "Tennessee Titans"
+                    },
+                    {
+                        "home": false,
+                        "id": "5565166-11852810",
+                        "name": "New England Patriots"
+                    }
+                ],
+                "denySameGame": "NO",
+                "description": "New England Patriots @ Tennessee Titans",
+                "displayGroups": [
+                    {
+                        "alternateType": false,
+                        "defaultType": true,
+                        "description": "Game Lines",
+                        "id": "100-41",
+                        "markets": [
+                            {
+                                "description": "Moneyline",
+                                "id": "84958185",
+                                "key": "2W-12",
+                                "marketTypeId": "11",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "competitorId": "5565166-11852810",
+                                        "description": "New England Patriots",
+                                        "id": "453517371",
+                                        "price": {
+                                            "american": "-125",
+                                            "decimal": "1.800",
+                                            "fractional": "4/5",
+                                            "hongkong": "0.80",
+                                            "id": "3286645625",
+                                            "indonesian": "-1.25",
+                                            "malay": "0.80"
+                                        },
+                                        "status": "O",
+                                        "type": "A"
+                                    },
+                                    {
+                                        "competitorId": "5565166-11904229",
+                                        "description": "Tennessee Titans",
+                                        "id": "453517372",
+                                        "price": {
+                                            "american": "+105",
+                                            "decimal": "2.050",
+                                            "fractional": "21/20",
+                                            "hongkong": "1.05",
+                                            "id": "3286645626",
+                                            "indonesian": "1.05",
+                                            "malay": "-0.95"
+                                        },
+                                        "status": "O",
+                                        "type": "H"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Match",
+                                    "id": "119",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "O"
+                            },
+                            {
+                                "description": "Point Spread",
+                                "id": "84958188",
+                                "key": "2W-HCAP",
+                                "marketTypeId": "120718",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "competitorId": "5565166-11852810",
+                                        "description": "New England Patriots",
+                                        "id": "453517383",
+                                        "price": {
+                                            "american": "-110",
+                                            "decimal": "1.909091",
+                                            "fractional": "10/11",
+                                            "handicap": "-1.5",
+                                            "hongkong": "0.91",
+                                            "id": "3291616071",
+                                            "indonesian": "-1.10",
+                                            "malay": "0.91"
+                                        },
+                                        "status": "O",
+                                        "type": "A"
+                                    },
+                                    {
+                                        "competitorId": "5565166-11904229",
+                                        "description": "Tennessee Titans",
+                                        "id": "453517384",
+                                        "price": {
+                                            "american": "-110",
+                                            "decimal": "1.909091",
+                                            "fractional": "10/11",
+                                            "handicap": "1.5",
+                                            "hongkong": "0.91",
+                                            "id": "3291616072",
+                                            "indonesian": "-1.10",
+                                            "malay": "0.91"
+                                        },
+                                        "status": "O",
+                                        "type": "H"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Match",
+                                    "id": "119",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "O"
+                            },
+                            {
+                                "description": "Total",
+                                "id": "84958187",
+                                "key": "2W-OU",
+                                "marketTypeId": "120717",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "description": "Over",
+                                        "id": "453517377",
+                                        "price": {
+                                            "american": "-110",
+                                            "decimal": "1.909091",
+                                            "fractional": "10/11",
+                                            "handicap": "41.5",
+                                            "hongkong": "0.91",
+                                            "id": "3289558209",
+                                            "indonesian": "-1.10",
+                                            "malay": "0.91"
+                                        },
+                                        "status": "O",
+                                        "type": "O"
+                                    },
+                                    {
+                                        "description": "Under",
+                                        "id": "453517378",
+                                        "price": {
+                                            "american": "-110",
+                                            "decimal": "1.909091",
+                                            "fractional": "10/11",
+                                            "handicap": "41.5",
+                                            "hongkong": "0.91",
+                                            "id": "3289558210",
+                                            "indonesian": "-1.10",
+                                            "malay": "0.91"
+                                        },
+                                        "status": "O",
+                                        "type": "U"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Match",
+                                    "id": "119",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "O"
+                            }
+                        ],
+                        "order": 1
+                    },
+                    {
+                        "alternateType": false,
+                        "defaultType": false,
+                        "description": "Score Props",
+                        "id": "100-62",
+                        "markets": [
+                            {
+                                "description": "Odd/Even Total Points",
+                                "id": "85944917",
+                                "key": "2W-OE",
+                                "marketTypeId": "178",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "description": "Even",
+                                        "id": "458240785",
+                                        "price": {
+                                            "american": "+110",
+                                            "decimal": "2.100",
+                                            "fractional": "11/10",
+                                            "hongkong": "1.10",
+                                            "id": "3291328235",
+                                            "indonesian": "1.10",
+                                            "malay": "-0.91"
+                                        },
+                                        "status": "O",
+                                        "type": "EV"
+                                    },
+                                    {
+                                        "description": "Odd",
+                                        "id": "458240786",
+                                        "price": {
+                                            "american": "-140",
+                                            "decimal": "1.714286",
+                                            "fractional": "5/7",
+                                            "hongkong": "0.71",
+                                            "id": "3292512628",
+                                            "indonesian": "-1.40",
+                                            "malay": "0.71"
+                                        },
+                                        "status": "O",
+                                        "type": "OD"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Match",
+                                    "id": "119",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "O"
+                            }
+                        ],
+                        "order": 6
+                    }
+                ],
+                "id": "5565166",
+                "lastModified": 1566003209816,
+                "link": "/football/nfl-preseason/new-england-patriots-tennessee-titans-201908171900",
+                "live": false,
+                "notes": "",
+                "numMarkets": 4,
+                "sport": "FOOT",
+                "startTime": 1566082800000,
+                "status": "U",
+                "teaserAllowed": true,
+                "type": "GAMEEVENT"
+            },
+            {
+                "awayTeamFirst": true,
+                "competitionId": "25146",
+                "competitors": [
+                    {
+                        "home": true,
+                        "id": "5565162-11904223",
+                        "name": "Pittsburgh Steelers"
+                    },
+                    {
+                        "home": false,
+                        "id": "5565162-11852811",
+                        "name": "Kansas City Chiefs"
+                    }
+                ],
+                "denySameGame": "NO",
+                "description": "Kansas City Chiefs @ Pittsburgh Steelers",
+                "displayGroups": [
+                    {
+                        "alternateType": false,
+                        "defaultType": true,
+                        "description": "Game Lines",
+                        "id": "100-41",
+                        "markets": [
+                            {
+                                "description": "Moneyline",
+                                "id": "84958146",
+                                "key": "2W-12",
+                                "marketTypeId": "11",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "competitorId": "5565162-11852811",
+                                        "description": "Kansas City Chiefs",
+                                        "id": "453517275",
+                                        "price": {
+                                            "american": "-135",
+                                            "decimal": "1.741",
+                                            "fractional": "20/27",
+                                            "hongkong": "0.74",
+                                            "id": "3283552682",
+                                            "indonesian": "-1.35",
+                                            "malay": "0.74"
+                                        },
+                                        "status": "O",
+                                        "type": "A"
+                                    },
+                                    {
+                                        "competitorId": "5565162-11904223",
+                                        "description": "Pittsburgh Steelers",
+                                        "id": "453517276",
+                                        "price": {
+                                            "american": "+115",
+                                            "decimal": "2.150",
+                                            "fractional": "23/20",
+                                            "hongkong": "1.15",
+                                            "id": "3283552683",
+                                            "indonesian": "1.15",
+                                            "malay": "-0.87"
+                                        },
+                                        "status": "O",
+                                        "type": "H"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Match",
+                                    "id": "119",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "O"
+                            },
+                            {
+                                "description": "Point Spread",
+                                "id": "84958139",
+                                "key": "2W-HCAP",
+                                "marketTypeId": "120718",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "competitorId": "5565162-11852811",
+                                        "description": "Kansas City Chiefs",
+                                        "id": "453517287",
+                                        "price": {
+                                            "american": "-105",
+                                            "decimal": "1.952381",
+                                            "fractional": "20/21",
+                                            "handicap": "-2.5",
+                                            "hongkong": "0.95",
+                                            "id": "3286650056",
+                                            "indonesian": "-1.05",
+                                            "malay": "0.95"
+                                        },
+                                        "status": "O",
+                                        "type": "A"
+                                    },
+                                    {
+                                        "competitorId": "5565162-11904223",
+                                        "description": "Pittsburgh Steelers",
+                                        "id": "453517288",
+                                        "price": {
+                                            "american": "-115",
+                                            "decimal": "1.870",
+                                            "fractional": "20/23",
+                                            "handicap": "2.5",
+                                            "hongkong": "0.87",
+                                            "id": "3286650057",
+                                            "indonesian": "-1.15",
+                                            "malay": "0.87"
+                                        },
+                                        "status": "O",
+                                        "type": "H"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Match",
+                                    "id": "119",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "O"
+                            },
+                            {
+                                "description": "Total",
+                                "id": "84958140",
+                                "key": "2W-OU",
+                                "marketTypeId": "120717",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "description": "Over",
+                                        "id": "453517281",
+                                        "price": {
+                                            "american": "-115",
+                                            "decimal": "1.870",
+                                            "fractional": "20/23",
+                                            "handicap": "46.5",
+                                            "hongkong": "0.87",
+                                            "id": "3273555172",
+                                            "indonesian": "-1.15",
+                                            "malay": "0.87"
+                                        },
+                                        "status": "O",
+                                        "type": "O"
+                                    },
+                                    {
+                                        "description": "Under",
+                                        "id": "453517282",
+                                        "price": {
+                                            "american": "-105",
+                                            "decimal": "1.952381",
+                                            "fractional": "20/21",
+                                            "handicap": "46.5",
+                                            "hongkong": "0.95",
+                                            "id": "3273555173",
+                                            "indonesian": "-1.05",
+                                            "malay": "0.95"
+                                        },
+                                        "status": "O",
+                                        "type": "U"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Match",
+                                    "id": "119",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "O"
+                            }
+                        ],
+                        "order": 1
+                    },
+                    {
+                        "alternateType": false,
+                        "defaultType": false,
+                        "description": "Score Props",
+                        "id": "100-62",
+                        "markets": [
+                            {
+                                "description": "Odd/Even Total Points",
+                                "id": "85945599",
+                                "key": "2W-OE",
+                                "marketTypeId": "178",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "description": "Even",
+                                        "id": "458244560",
+                                        "price": {
+                                            "american": "+115",
+                                            "decimal": "2.150",
+                                            "fractional": "23/20",
+                                            "hongkong": "1.15",
+                                            "id": "3283531586",
+                                            "indonesian": "1.15",
+                                            "malay": "-0.87"
+                                        },
+                                        "status": "O",
+                                        "type": "EV"
+                                    },
+                                    {
+                                        "description": "Odd",
+                                        "id": "458244559",
+                                        "price": {
+                                            "american": "-145",
+                                            "decimal": "1.690",
+                                            "fractional": "20/29",
+                                            "hongkong": "0.69",
+                                            "id": "3283531585",
+                                            "indonesian": "-1.45",
+                                            "malay": "0.69"
+                                        },
+                                        "status": "O",
+                                        "type": "OD"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Match",
+                                    "id": "119",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "O"
+                            }
+                        ],
+                        "order": 6
+                    }
+                ],
+                "id": "5565162",
+                "lastModified": 1566003209845,
+                "link": "/football/nfl-preseason/kansas-city-chiefs-pittsburgh-steelers-201908171930",
+                "live": false,
+                "notes": "",
+                "numMarkets": 4,
+                "sport": "FOOT",
+                "startTime": 1566084600000,
+                "status": "U",
+                "teaserAllowed": true,
+                "type": "GAMEEVENT"
+            },
+            {
+                "awayTeamFirst": true,
+                "competitionId": "25146",
+                "competitors": [
+                    {
+                        "home": true,
+                        "id": "5565180-11904230",
+                        "name": "Houston Texans"
+                    },
+                    {
+                        "home": false,
+                        "id": "5565180-11904244",
+                        "name": "Detroit Lions"
+                    }
+                ],
+                "denySameGame": "NO",
+                "description": "Detroit Lions @ Houston Texans",
+                "displayGroups": [
+                    {
+                        "alternateType": false,
+                        "defaultType": true,
+                        "description": "Game Lines",
+                        "id": "100-41",
+                        "markets": [
+                            {
+                                "description": "Moneyline",
+                                "id": "84958360",
+                                "key": "2W-12",
+                                "marketTypeId": "11",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "competitorId": "5565180-11904244",
+                                        "description": "Detroit Lions",
+                                        "id": "453517684",
+                                        "price": {
+                                            "american": "+180",
+                                            "decimal": "2.800",
+                                            "fractional": "9/5",
+                                            "hongkong": "1.80",
+                                            "id": "3280614180",
+                                            "indonesian": "1.80",
+                                            "malay": "-0.56"
+                                        },
+                                        "status": "O",
+                                        "type": "A"
+                                    },
+                                    {
+                                        "competitorId": "5565180-11904230",
+                                        "description": "Houston Texans",
+                                        "id": "453517685",
+                                        "price": {
+                                            "american": "-220",
+                                            "decimal": "1.454545",
+                                            "fractional": "5/11",
+                                            "hongkong": "0.45",
+                                            "id": "3280614181",
+                                            "indonesian": "-2.20",
+                                            "malay": "0.45"
+                                        },
+                                        "status": "O",
+                                        "type": "H"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Match",
+                                    "id": "119",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "O"
+                            },
+                            {
+                                "description": "Point Spread",
+                                "id": "84958361",
+                                "key": "2W-HCAP",
+                                "marketTypeId": "120718",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "competitorId": "5565180-11904244",
+                                        "description": "Detroit Lions",
+                                        "id": "453517696",
+                                        "price": {
+                                            "american": "-110",
+                                            "decimal": "1.909091",
+                                            "fractional": "10/11",
+                                            "handicap": "4.5",
+                                            "hongkong": "0.91",
+                                            "id": "3266574786",
+                                            "indonesian": "-1.10",
+                                            "malay": "0.91"
+                                        },
+                                        "status": "O",
+                                        "type": "A"
+                                    },
+                                    {
+                                        "competitorId": "5565180-11904230",
+                                        "description": "Houston Texans",
+                                        "id": "453517697",
+                                        "price": {
+                                            "american": "-110",
+                                            "decimal": "1.909091",
+                                            "fractional": "10/11",
+                                            "handicap": "-4.5",
+                                            "hongkong": "0.91",
+                                            "id": "3266574787",
+                                            "indonesian": "-1.10",
+                                            "malay": "0.91"
+                                        },
+                                        "status": "O",
+                                        "type": "H"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Match",
+                                    "id": "119",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "O"
+                            },
+                            {
+                                "description": "Total",
+                                "id": "84958357",
+                                "key": "2W-OU",
+                                "marketTypeId": "120717",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "description": "Over",
+                                        "id": "453517690",
+                                        "price": {
+                                            "american": "-110",
+                                            "decimal": "1.909091",
+                                            "fractional": "10/11",
+                                            "handicap": "41.0",
+                                            "hongkong": "0.91",
+                                            "id": "3291392226",
+                                            "indonesian": "-1.10",
+                                            "malay": "0.91"
+                                        },
+                                        "status": "O",
+                                        "type": "O"
+                                    },
+                                    {
+                                        "description": "Under",
+                                        "id": "453517691",
+                                        "price": {
+                                            "american": "-110",
+                                            "decimal": "1.909091",
+                                            "fractional": "10/11",
+                                            "handicap": "41.0",
+                                            "hongkong": "0.91",
+                                            "id": "3291392227",
+                                            "indonesian": "-1.10",
+                                            "malay": "0.91"
+                                        },
+                                        "status": "O",
+                                        "type": "U"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Match",
+                                    "id": "119",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "O"
+                            }
+                        ],
+                        "order": 1
+                    },
+                    {
+                        "alternateType": false,
+                        "defaultType": false,
+                        "description": "Score Props",
+                        "id": "100-62",
+                        "markets": [
+                            {
+                                "description": "Odd/Even Total Points",
+                                "id": "85946017",
+                                "key": "2W-OE",
+                                "marketTypeId": "178",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "description": "Even",
+                                        "id": "458247431",
+                                        "price": {
+                                            "american": "+105",
+                                            "decimal": "2.050",
+                                            "fractional": "21/20",
+                                            "hongkong": "1.05",
+                                            "id": "3291562258",
+                                            "indonesian": "1.05",
+                                            "malay": "-0.95"
+                                        },
+                                        "status": "O",
+                                        "type": "EV"
+                                    },
+                                    {
+                                        "description": "Odd",
+                                        "id": "458247430",
+                                        "price": {
+                                            "american": "-130",
+                                            "decimal": "1.770",
+                                            "fractional": "10/13",
+                                            "hongkong": "0.77",
+                                            "id": "3291562257",
+                                            "indonesian": "-1.30",
+                                            "malay": "0.77"
+                                        },
+                                        "status": "O",
+                                        "type": "OD"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Match",
+                                    "id": "119",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "O"
+                            }
+                        ],
+                        "order": 6
+                    }
+                ],
+                "id": "5565180",
+                "lastModified": 1566003209861,
+                "link": "/football/nfl-preseason/detroit-lions-houston-texans-201908172000",
+                "live": false,
+                "notes": "",
+                "numMarkets": 4,
+                "sport": "FOOT",
+                "startTime": 1566086400000,
+                "status": "U",
+                "teaserAllowed": true,
+                "type": "GAMEEVENT"
+            },
+            {
+                "awayTeamFirst": true,
+                "competitionId": "25146",
+                "competitors": [
+                    {
+                        "home": true,
+                        "id": "5565183-11904226",
+                        "name": "Los Angeles Rams"
+                    },
+                    {
+                        "home": false,
+                        "id": "5565183-11904234",
+                        "name": "Dallas Cowboys"
+                    }
+                ],
+                "denySameGame": "NO",
+                "description": "Dallas Cowboys @ Los Angeles Rams",
+                "displayGroups": [
+                    {
+                        "alternateType": false,
+                        "defaultType": true,
+                        "description": "Game Lines",
+                        "id": "100-41",
+                        "markets": [
+                            {
+                                "description": "Moneyline",
+                                "id": "84958387",
+                                "key": "2W-12",
+                                "marketTypeId": "11",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "competitorId": "5565183-11904234",
+                                        "description": "Dallas Cowboys",
+                                        "id": "453517804",
+                                        "price": {
+                                            "american": "-160",
+                                            "decimal": "1.625",
+                                            "fractional": "5/8",
+                                            "hongkong": "0.62",
+                                            "id": "3290813118",
+                                            "indonesian": "-1.60",
+                                            "malay": "0.62"
+                                        },
+                                        "status": "O",
+                                        "type": "A"
+                                    },
+                                    {
+                                        "competitorId": "5565183-11904226",
+                                        "description": "Los Angeles Rams",
+                                        "id": "453517805",
+                                        "price": {
+                                            "american": "+140",
+                                            "decimal": "2.400",
+                                            "fractional": "7/5",
+                                            "hongkong": "1.40",
+                                            "id": "3290813119",
+                                            "indonesian": "1.40",
+                                            "malay": "-0.71"
+                                        },
+                                        "status": "O",
+                                        "type": "H"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Match",
+                                    "id": "119",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "O"
+                            },
+                            {
+                                "description": "Point Spread",
+                                "id": "84958390",
+                                "key": "2W-HCAP",
+                                "marketTypeId": "120718",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "competitorId": "5565183-11904234",
+                                        "description": "Dallas Cowboys",
+                                        "id": "453517816",
+                                        "price": {
+                                            "american": "-105",
+                                            "decimal": "1.952381",
+                                            "fractional": "20/21",
+                                            "handicap": "-3.0",
+                                            "hongkong": "0.95",
+                                            "id": "3290812568",
+                                            "indonesian": "-1.05",
+                                            "malay": "0.95"
+                                        },
+                                        "status": "O",
+                                        "type": "A"
+                                    },
+                                    {
+                                        "competitorId": "5565183-11904226",
+                                        "description": "Los Angeles Rams",
+                                        "id": "453517817",
+                                        "price": {
+                                            "american": "-115",
+                                            "decimal": "1.870",
+                                            "fractional": "20/23",
+                                            "handicap": "3.0",
+                                            "hongkong": "0.87",
+                                            "id": "3290812569",
+                                            "indonesian": "-1.15",
+                                            "malay": "0.87"
+                                        },
+                                        "status": "O",
+                                        "type": "H"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Match",
+                                    "id": "119",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "O"
+                            },
+                            {
+                                "description": "Total",
+                                "id": "84958396",
+                                "key": "2W-OU",
+                                "marketTypeId": "120717",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "description": "Over",
+                                        "id": "453517810",
+                                        "price": {
+                                            "american": "-110",
+                                            "decimal": "1.909091",
+                                            "fractional": "10/11",
+                                            "handicap": "38.5",
+                                            "hongkong": "0.91",
+                                            "id": "3292105986",
+                                            "indonesian": "-1.10",
+                                            "malay": "0.91"
+                                        },
+                                        "status": "O",
+                                        "type": "O"
+                                    },
+                                    {
+                                        "description": "Under",
+                                        "id": "453517811",
+                                        "price": {
+                                            "american": "-110",
+                                            "decimal": "1.909091",
+                                            "fractional": "10/11",
+                                            "handicap": "38.5",
+                                            "hongkong": "0.91",
+                                            "id": "3292105987",
+                                            "indonesian": "-1.10",
+                                            "malay": "0.91"
+                                        },
+                                        "status": "O",
+                                        "type": "U"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Match",
+                                    "id": "119",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "O"
+                            }
+                        ],
+                        "order": 1
+                    },
+                    {
+                        "alternateType": false,
+                        "defaultType": false,
+                        "description": "Score Props",
+                        "id": "100-62",
+                        "markets": [
+                            {
+                                "description": "Odd/Even Total Points",
+                                "id": "85946545",
+                                "key": "2W-OE",
+                                "marketTypeId": "178",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "description": "Even",
+                                        "id": "458250934",
+                                        "price": {
+                                            "american": "+110",
+                                            "decimal": "2.100",
+                                            "fractional": "11/10",
+                                            "hongkong": "1.10",
+                                            "id": "3276002228",
+                                            "indonesian": "1.10",
+                                            "malay": "-0.91"
+                                        },
+                                        "status": "O",
+                                        "type": "EV"
+                                    },
+                                    {
+                                        "description": "Odd",
+                                        "id": "458250935",
+                                        "price": {
+                                            "american": "-140",
+                                            "decimal": "1.714286",
+                                            "fractional": "5/7",
+                                            "hongkong": "0.71",
+                                            "id": "3276002229",
+                                            "indonesian": "-1.40",
+                                            "malay": "0.71"
+                                        },
+                                        "status": "O",
+                                        "type": "OD"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Match",
+                                    "id": "119",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "O"
+                            }
+                        ],
+                        "order": 6
+                    }
+                ],
+                "id": "5565183",
+                "lastModified": 1566003209818,
+                "link": "/football/nfl-preseason/dallas-cowboys-los-angeles-rams-201908172200",
+                "live": false,
+                "notes": "",
+                "numMarkets": 4,
+                "sport": "FOOT",
+                "startTime": 1566093600000,
+                "status": "U",
+                "teaserAllowed": true,
+                "type": "GAMEEVENT"
+            },
+            {
+                "awayTeamFirst": true,
+                "competitionId": "25146",
+                "competitors": [
+                    {
+                        "home": true,
+                        "id": "5565160-11904248",
+                        "name": "Los Angeles Chargers"
+                    },
+                    {
+                        "home": false,
+                        "id": "5565160-11904221",
+                        "name": "New Orleans Saints"
+                    }
+                ],
+                "denySameGame": "NO",
+                "description": "New Orleans Saints @ Los Angeles Chargers",
+                "displayGroups": [
+                    {
+                        "alternateType": false,
+                        "defaultType": true,
+                        "description": "Game Lines",
+                        "id": "100-41",
+                        "markets": [
+                            {
+                                "description": "Moneyline",
+                                "id": "84958113",
+                                "key": "2W-12",
+                                "marketTypeId": "11",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "competitorId": "5565160-11904221",
+                                        "description": "New Orleans Saints",
+                                        "id": "453517203",
+                                        "price": {
+                                            "american": "EVEN",
+                                            "decimal": "2.00",
+                                            "fractional": "1/1",
+                                            "hongkong": "1.00",
+                                            "id": "3291996828",
+                                            "indonesian": "1.00",
+                                            "malay": "1.00"
+                                        },
+                                        "status": "O",
+                                        "type": "A"
+                                    },
+                                    {
+                                        "competitorId": "5565160-11904248",
+                                        "description": "Los Angeles Chargers",
+                                        "id": "453517204",
+                                        "price": {
+                                            "american": "-120",
+                                            "decimal": "1.833333",
+                                            "fractional": "5/6",
+                                            "hongkong": "0.83",
+                                            "id": "3291996829",
+                                            "indonesian": "-1.20",
+                                            "malay": "0.83"
+                                        },
+                                        "status": "O",
+                                        "type": "H"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Match",
+                                    "id": "119",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "O"
+                            },
+                            {
+                                "description": "Point Spread",
+                                "id": "84958118",
+                                "key": "2W-HCAP",
+                                "marketTypeId": "120718",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "competitorId": "5565160-11904221",
+                                        "description": "New Orleans Saints",
+                                        "id": "453517215",
+                                        "price": {
+                                            "american": "-115",
+                                            "decimal": "1.870",
+                                            "fractional": "20/23",
+                                            "handicap": "1.0",
+                                            "hongkong": "0.87",
+                                            "id": "3291985340",
+                                            "indonesian": "-1.15",
+                                            "malay": "0.87"
+                                        },
+                                        "status": "O",
+                                        "type": "A"
+                                    },
+                                    {
+                                        "competitorId": "5565160-11904248",
+                                        "description": "Los Angeles Chargers",
+                                        "id": "453517216",
+                                        "price": {
+                                            "american": "-105",
+                                            "decimal": "1.952381",
+                                            "fractional": "20/21",
+                                            "handicap": "-1.0",
+                                            "hongkong": "0.95",
+                                            "id": "3291985341",
+                                            "indonesian": "-1.05",
+                                            "malay": "0.95"
+                                        },
+                                        "status": "O",
+                                        "type": "H"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Match",
+                                    "id": "119",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "O"
+                            },
+                            {
+                                "description": "Total",
+                                "id": "84958119",
+                                "key": "2W-OU",
+                                "marketTypeId": "120717",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "description": "Over",
+                                        "id": "453517209",
+                                        "price": {
+                                            "american": "-110",
+                                            "decimal": "1.909091",
+                                            "fractional": "10/11",
+                                            "handicap": "43.0",
+                                            "hongkong": "0.91",
+                                            "id": "3291997852",
+                                            "indonesian": "-1.10",
+                                            "malay": "0.91"
+                                        },
+                                        "status": "O",
+                                        "type": "O"
+                                    },
+                                    {
+                                        "description": "Under",
+                                        "id": "453517210",
+                                        "price": {
+                                            "american": "-110",
+                                            "decimal": "1.909091",
+                                            "fractional": "10/11",
+                                            "handicap": "43.0",
+                                            "hongkong": "0.91",
+                                            "id": "3291997853",
+                                            "indonesian": "-1.10",
+                                            "malay": "0.91"
+                                        },
+                                        "status": "O",
+                                        "type": "U"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Match",
+                                    "id": "119",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "O"
+                            }
+                        ],
+                        "order": 1
+                    },
+                    {
+                        "alternateType": false,
+                        "defaultType": false,
+                        "description": "Score Props",
+                        "id": "100-62",
+                        "markets": [
+                            {
+                                "description": "Odd/Even Total Points",
+                                "id": "85947188",
+                                "key": "2W-OE",
+                                "marketTypeId": "178",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "description": "Even",
+                                        "id": "458254763",
+                                        "price": {
+                                            "american": "+115",
+                                            "decimal": "2.150",
+                                            "fractional": "23/20",
+                                            "hongkong": "1.15",
+                                            "id": "3286615751",
+                                            "indonesian": "1.15",
+                                            "malay": "-0.87"
+                                        },
+                                        "status": "O",
+                                        "type": "EV"
+                                    },
+                                    {
+                                        "description": "Odd",
+                                        "id": "458254764",
+                                        "price": {
+                                            "american": "-145",
+                                            "decimal": "1.690",
+                                            "fractional": "20/29",
+                                            "hongkong": "0.69",
+                                            "id": "3286615752",
+                                            "indonesian": "-1.45",
+                                            "malay": "0.69"
+                                        },
+                                        "status": "O",
+                                        "type": "OD"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Match",
+                                    "id": "119",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "O"
+                            }
+                        ],
+                        "order": 6
+                    }
+                ],
+                "id": "5565160",
+                "lastModified": 1566003209735,
+                "link": "/football/nfl-preseason/new-orleans-saints-los-angeles-chargers-201908181600",
+                "live": false,
+                "notes": "",
+                "numMarkets": 4,
+                "sport": "FOOT",
+                "startTime": 1566158400000,
+                "status": "U",
+                "teaserAllowed": true,
+                "type": "GAMEEVENT"
+            },
+            {
+                "awayTeamFirst": true,
+                "competitionId": "25146",
+                "competitors": [
+                    {
+                        "home": true,
+                        "id": "5565186-11904246",
+                        "name": "Minnesota Vikings"
+                    },
+                    {
+                        "home": false,
+                        "id": "5565186-11904231",
+                        "name": "Seattle Seahawks"
+                    }
+                ],
+                "denySameGame": "NO",
+                "description": "Seattle Seahawks @ Minnesota Vikings",
+                "displayGroups": [
+                    {
+                        "alternateType": false,
+                        "defaultType": true,
+                        "description": "Game Lines",
+                        "id": "100-41",
+                        "markets": [
+                            {
+                                "description": "Moneyline",
+                                "id": "84958426",
+                                "key": "2W-12",
+                                "marketTypeId": "11",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "competitorId": "5565186-11904231",
+                                        "description": "Seattle Seahawks",
+                                        "id": "453517852",
+                                        "price": {
+                                            "american": "+160",
+                                            "decimal": "2.600",
+                                            "fractional": "8/5",
+                                            "hongkong": "1.60",
+                                            "id": "3287736962",
+                                            "indonesian": "1.60",
+                                            "malay": "-0.62"
+                                        },
+                                        "status": "O",
+                                        "type": "A"
+                                    },
+                                    {
+                                        "competitorId": "5565186-11904246",
+                                        "description": "Minnesota Vikings",
+                                        "id": "453517853",
+                                        "price": {
+                                            "american": "-180",
+                                            "decimal": "1.555556",
+                                            "fractional": "5/9",
+                                            "hongkong": "0.56",
+                                            "id": "3287736963",
+                                            "indonesian": "-1.80",
+                                            "malay": "0.56"
+                                        },
+                                        "status": "O",
+                                        "type": "H"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Match",
+                                    "id": "119",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "O"
+                            },
+                            {
+                                "description": "Point Spread",
+                                "id": "84958429",
+                                "key": "2W-HCAP",
+                                "marketTypeId": "120718",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "competitorId": "5565186-11904231",
+                                        "description": "Seattle Seahawks",
+                                        "id": "453517864",
+                                        "price": {
+                                            "american": "-110",
+                                            "decimal": "1.909091",
+                                            "fractional": "10/11",
+                                            "handicap": "3.5",
+                                            "hongkong": "0.91",
+                                            "id": "3283593688",
+                                            "indonesian": "-1.10",
+                                            "malay": "0.91"
+                                        },
+                                        "status": "O",
+                                        "type": "A"
+                                    },
+                                    {
+                                        "competitorId": "5565186-11904246",
+                                        "description": "Minnesota Vikings",
+                                        "id": "453517865",
+                                        "price": {
+                                            "american": "-110",
+                                            "decimal": "1.909091",
+                                            "fractional": "10/11",
+                                            "handicap": "-3.5",
+                                            "hongkong": "0.91",
+                                            "id": "3283593689",
+                                            "indonesian": "-1.10",
+                                            "malay": "0.91"
+                                        },
+                                        "status": "O",
+                                        "type": "H"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Match",
+                                    "id": "119",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "O"
+                            },
+                            {
+                                "description": "Total",
+                                "id": "84958433",
+                                "key": "2W-OU",
+                                "marketTypeId": "120717",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "description": "Over",
+                                        "id": "453517858",
+                                        "price": {
+                                            "american": "-110",
+                                            "decimal": "1.909091",
+                                            "fractional": "10/11",
+                                            "handicap": "41.0",
+                                            "hongkong": "0.91",
+                                            "id": "3291510213",
+                                            "indonesian": "-1.10",
+                                            "malay": "0.91"
+                                        },
+                                        "status": "O",
+                                        "type": "O"
+                                    },
+                                    {
+                                        "description": "Under",
+                                        "id": "453517859",
+                                        "price": {
+                                            "american": "-110",
+                                            "decimal": "1.909091",
+                                            "fractional": "10/11",
+                                            "handicap": "41.0",
+                                            "hongkong": "0.91",
+                                            "id": "3291510214",
+                                            "indonesian": "-1.10",
+                                            "malay": "0.91"
+                                        },
+                                        "status": "O",
+                                        "type": "U"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Match",
+                                    "id": "119",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "O"
+                            }
+                        ],
+                        "order": 1
+                    },
+                    {
+                        "alternateType": false,
+                        "defaultType": false,
+                        "description": "Score Props",
+                        "id": "100-62",
+                        "markets": [
+                            {
+                                "description": "Odd/Even Total Points",
+                                "id": "85947886",
+                                "key": "2W-OE",
+                                "marketTypeId": "178",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "description": "Even",
+                                        "id": "458258478",
+                                        "price": {
+                                            "american": "+105",
+                                            "decimal": "2.050",
+                                            "fractional": "21/20",
+                                            "hongkong": "1.05",
+                                            "id": "3284934568",
+                                            "indonesian": "1.05",
+                                            "malay": "-0.95"
+                                        },
+                                        "status": "O",
+                                        "type": "EV"
+                                    },
+                                    {
+                                        "description": "Odd",
+                                        "id": "458258479",
+                                        "price": {
+                                            "american": "-130",
+                                            "decimal": "1.770",
+                                            "fractional": "10/13",
+                                            "hongkong": "0.77",
+                                            "id": "3284934569",
+                                            "indonesian": "-1.30",
+                                            "malay": "0.77"
+                                        },
+                                        "status": "O",
+                                        "type": "OD"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Match",
+                                    "id": "119",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "O"
+                            }
+                        ],
+                        "order": 6
+                    }
+                ],
+                "id": "5565186",
+                "lastModified": 1566003209732,
+                "link": "/football/nfl-preseason/seattle-seahawks-minnesota-vikings-201908182000",
+                "live": false,
+                "notes": "",
+                "numMarkets": 4,
+                "sport": "FOOT",
+                "startTime": 1566172800000,
+                "status": "U",
+                "teaserAllowed": true,
+                "type": "GAMEEVENT"
+            },
+            {
+                "awayTeamFirst": true,
+                "competitionId": "25146",
+                "competitors": [
+                    {
+                        "home": true,
+                        "id": "5565174-11904245",
+                        "name": "Denver Broncos"
+                    },
+                    {
+                        "home": false,
+                        "id": "5565174-11904233",
+                        "name": "San Francisco 49ers"
+                    }
+                ],
+                "denySameGame": "NO",
+                "description": "San Francisco 49ers @ Denver Broncos",
+                "displayGroups": [
+                    {
+                        "alternateType": false,
+                        "defaultType": true,
+                        "description": "Game Lines",
+                        "id": "100-41",
+                        "markets": [
+                            {
+                                "description": "Moneyline",
+                                "id": "84958285",
+                                "key": "2W-12",
+                                "marketTypeId": "11",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "competitorId": "5565174-11904233",
+                                        "description": "San Francisco 49ers",
+                                        "id": "453517564",
+                                        "price": {
+                                            "american": "+120",
+                                            "decimal": "2.200",
+                                            "fractional": "6/5",
+                                            "hongkong": "1.20",
+                                            "id": "3280595579",
+                                            "indonesian": "1.20",
+                                            "malay": "-0.83"
+                                        },
+                                        "status": "O",
+                                        "type": "A"
+                                    },
+                                    {
+                                        "competitorId": "5565174-11904245",
+                                        "description": "Denver Broncos",
+                                        "id": "453517565",
+                                        "price": {
+                                            "american": "-140",
+                                            "decimal": "1.714286",
+                                            "fractional": "5/7",
+                                            "hongkong": "0.71",
+                                            "id": "3280595580",
+                                            "indonesian": "-1.40",
+                                            "malay": "0.71"
+                                        },
+                                        "status": "O",
+                                        "type": "H"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Match",
+                                    "id": "119",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "O"
+                            },
+                            {
+                                "description": "Point Spread",
+                                "id": "84958289",
+                                "key": "2W-HCAP",
+                                "marketTypeId": "120718",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "competitorId": "5565174-11904233",
+                                        "description": "San Francisco 49ers",
+                                        "id": "453517576",
+                                        "price": {
+                                            "american": "-110",
+                                            "decimal": "1.909091",
+                                            "fractional": "10/11",
+                                            "handicap": "2.5",
+                                            "hongkong": "0.91",
+                                            "id": "3273553676",
+                                            "indonesian": "-1.10",
+                                            "malay": "0.91"
+                                        },
+                                        "status": "O",
+                                        "type": "A"
+                                    },
+                                    {
+                                        "competitorId": "5565174-11904245",
+                                        "description": "Denver Broncos",
+                                        "id": "453517577",
+                                        "price": {
+                                            "american": "-110",
+                                            "decimal": "1.909091",
+                                            "fractional": "10/11",
+                                            "handicap": "-2.5",
+                                            "hongkong": "0.91",
+                                            "id": "3273553677",
+                                            "indonesian": "-1.10",
+                                            "malay": "0.91"
+                                        },
+                                        "status": "O",
+                                        "type": "H"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Match",
+                                    "id": "119",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "O"
+                            },
+                            {
+                                "description": "Total",
+                                "id": "84958283",
+                                "key": "2W-OU",
+                                "marketTypeId": "120717",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "description": "Over",
+                                        "id": "453517570",
+                                        "price": {
+                                            "american": "-105",
+                                            "decimal": "1.952381",
+                                            "fractional": "20/21",
+                                            "handicap": "41.5",
+                                            "hongkong": "0.95",
+                                            "id": "3280293131",
+                                            "indonesian": "-1.05",
+                                            "malay": "0.95"
+                                        },
+                                        "status": "O",
+                                        "type": "O"
+                                    },
+                                    {
+                                        "description": "Under",
+                                        "id": "453517571",
+                                        "price": {
+                                            "american": "-115",
+                                            "decimal": "1.870",
+                                            "fractional": "20/23",
+                                            "handicap": "41.5",
+                                            "hongkong": "0.87",
+                                            "id": "3280293132",
+                                            "indonesian": "-1.15",
+                                            "malay": "0.87"
+                                        },
+                                        "status": "O",
+                                        "type": "U"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Match",
+                                    "id": "119",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "O"
+                            }
+                        ],
+                        "order": 1
+                    },
+                    {
+                        "alternateType": false,
+                        "defaultType": false,
+                        "description": "Score Props",
+                        "id": "100-62",
+                        "markets": [
+                            {
+                                "description": "Odd/Even Total Points",
+                                "id": "85950955",
+                                "key": "2W-OE",
+                                "marketTypeId": "178",
+                                "notes": "",
+                                "outcomes": [
+                                    {
+                                        "description": "Even",
+                                        "id": "458276656",
+                                        "price": {
+                                            "american": "+110",
+                                            "decimal": "2.100",
+                                            "fractional": "11/10",
+                                            "hongkong": "1.10",
+                                            "id": "3287488791",
+                                            "indonesian": "1.10",
+                                            "malay": "-0.91"
+                                        },
+                                        "status": "O",
+                                        "type": "EV"
+                                    },
+                                    {
+                                        "description": "Odd",
+                                        "id": "458276657",
+                                        "price": {
+                                            "american": "-140",
+                                            "decimal": "1.714286",
+                                            "fractional": "5/7",
+                                            "hongkong": "0.71",
+                                            "id": "3287488792",
+                                            "indonesian": "-1.40",
+                                            "malay": "0.71"
+                                        },
+                                        "status": "O",
+                                        "type": "OD"
+                                    }
+                                ],
+                                "period": {
+                                    "abbreviation": "M",
+                                    "description": "Match",
+                                    "id": "119",
+                                    "live": false,
+                                    "main": true
+                                },
+                                "singleOnly": false,
+                                "status": "O"
+                            }
+                        ],
+                        "order": 6
+                    }
+                ],
+                "id": "5565174",
+                "lastModified": 1566003209804,
+                "link": "/football/nfl-preseason/san-francisco-49ers-denver-broncos-201908192000",
+                "live": false,
+                "notes": "",
+                "numMarkets": 4,
+                "sport": "FOOT",
+                "startTime": 1566259200000,
+                "status": "U",
+                "teaserAllowed": true,
+                "type": "GAMEEVENT"
+            }
+        ],
+        "path": [
+            {
+                "current": true,
+                "description": "NFL Preseason",
+                "id": "25146",
+                "leaf": true,
+                "link": "/football/nfl-preseason",
+                "order": 1,
+                "sportCode": "FOOT",
+                "type": "LEAGUE"
+            },
+            {
+                "current": false,
+                "description": "Football",
+                "id": "1",
+                "leaf": false,
+                "link": "/football",
+                "order": 6,
+                "sportCode": "FOOT",
+                "type": "SPORT"
+            }
+        ]
+    }
+]

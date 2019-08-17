@@ -104,6 +104,7 @@ def get_to_analysis(next_matchup, log_file, raw_data_path, analyzed_data_path, b
         current_time = datetime.now()
         # permanent code (uncomment please)
         if bert_data_path:
+            # pass
             sentiment.bert_analyze_raw_files(raw_data_path, analyzed_data_path, bert_data_path)
         else:
             sentiment.analyze_raw_files(raw_data_path, analyzed_data_path)

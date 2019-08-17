@@ -30,6 +30,7 @@ if __name__ == "__main__":
     raw_data_path = data_path + os.sep + "raw"
     analyzed_data_path = data_path + os.sep + "analyzed"
     team_data_dir = data_path + os.sep + "team"
+    odds_file_path = data_path + os.sep + "odds" + os.sep + "odds.csv"
     league = {}
     for team_name in nfl_tags_dict:
         league[team_name] = Team(team_name, nfl_tags_dict[team_name], team_data_dir)
@@ -41,6 +42,6 @@ if __name__ == "__main__":
     while running:
         tools.get_to_analysis(next_matchup, analysis_log_file, raw_data_path, analyzed_data_path, bert_data_path=bert_data_path, debug=debug)
         # next_matchup.analyze(bot_account, bert_analyzed_data_path, print_result = True, send_tweet = tweet, debug=debug)
-        next_matchup.analyze(bot_account, analyzed_data_path, print_result = True, send_tweet = tweet, debug=debug)
+        next_matchup.analyze(bot_account, analyzed_data_path, odds_file_path, print_result = True, send_tweet = tweet, debug=debug)
         next_matchup = tools.get_next_matchup(schedule_file, league, previous_matchup=next_matchup, debug=debug)
         running = not debug
