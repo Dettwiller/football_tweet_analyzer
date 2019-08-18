@@ -45,7 +45,13 @@ class Matchup():
                         odds_2 = event['displayGroups'][0]["markets"][moneyline_index]["outcomes"][1]["price"]["american"]
                     else:
                         raise ValueError("No Moneyline")
-            odds = {"_".join(team_1.split()): odds_1, "_".join(team_2.split()): odds_2}
+            if self.away_team.name != "_".join(team_1.split()):
+                print("expected away team name: " + self.away_team.name)
+                print("got: " + "_".join(team_1.split()))
+            if self.home_team.name != "_".join(team_2.split()):
+                print("expected away team name: " + self.home_team.name)
+                print("got: " + "_".join(team_2.split()))
+            odds = {self.away_team.name: odds_1, self.home_team.name: odds_2}
         except:
             odds = {self.away_team.name: "NA", self.home_team.name: "NA"}
         return odds
