@@ -59,6 +59,7 @@ class Team():
         plt.legend(loc='best', fancybox=True)
         plt.tight_layout()
         plt.savefig(figure_file)
+        plt.close()
 
     def analyze(self, game_time, analyzed_data_path, start_date = datetime(2019, 8, 2), debug=False):
         if debug:
