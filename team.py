@@ -38,7 +38,8 @@ class Team():
         return sentiments, times
 
     def __plot_sentiment(self, rolling_4day, rolling_1day, game_time):
-        start_plot = datetime.now() - timedelta(days=4)
+        plotted_days = 1
+        start_plot = datetime.now() - timedelta(days=plotted_days)
         relevant_rolling_4day = rolling_4day.loc[start_plot : datetime.now()]
         relevant_rolling_1day = rolling_1day.loc[start_plot : datetime.now()]
         title_font_size = 14
@@ -53,7 +54,7 @@ class Team():
         plt.plot(relevant_rolling_4day, linewidth=1.0, color='b', label='4 day rolling average')
         plt.plot(relevant_rolling_1day, linewidth=1.0, color='r', label='1 day rolling average')
         plt.ylabel('Sentiment', fontsize=label_font_size)
-        plt.xlabel('"time"', fontsize=label_font_size)
+        plt.xlabel('Previous ' + str(plotted_days) + ' day(s)', fontsize=label_font_size)
         plt.xticks([], [])
         plt.title(title, fontsize=title_font_size)
         plt.legend(loc='best', fancybox=True)
