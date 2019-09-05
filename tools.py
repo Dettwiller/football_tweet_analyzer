@@ -90,11 +90,12 @@ def get_to_analysis(next_matchup, log_file, raw_data_path, analyzed_data_path, b
         seconds_until_analysis = int((next_matchup.game_time- current_time).total_seconds()) - one_hour # analyze an hour before kickoff
     while seconds_until_analysis > 0:
         sleep_time = int(min(6 * one_hour, seconds_until_analysis))
+        hours_sleep_time = '{0:.2f}'.format((sleep_time + extra_delay) / 3600.0)
         if debug:
             log = "DEBUG: " + "{:%Y-%B-%d %H:%M}".format(current_time) + " Going to sleep for " + str(sleep_time + extra_delay) + " seconds!\n"
             log += "    DEBUG: " + str(seconds_until_analysis) + " seconds until " + next_matchup.name + " analysis time!\n"
         else:
-            log = "{:%Y-%B-%d %H:%M}".format(current_time) + " Going to sleep for " + str(sleep_time + extra_delay) + " seconds (" + str((sleep_time + extra_delay)/3600.0) + " hours)!\n"
+            log = "{:%Y-%B-%d %H:%M}".format(current_time) + " Going to sleep for " + str(sleep_time + extra_delay) + " seconds (" + hours_sleep_time + " hours)!\n"
             log += "    " + str(seconds_until_analysis) + " seconds until " + next_matchup.name + " analysis time!\n"
         with open(log_file, "a+", encoding='utf-8') as lf:
             lf.write(log)
