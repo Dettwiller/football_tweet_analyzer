@@ -38,7 +38,8 @@ class Team():
         return sentiments, times
 
     def __plot_sentiment(self, rolling_4day, rolling_1day, game_time):
-        start_plot = datetime.now() - timedelta(days=4)
+        plotted_days = 1
+        start_plot = datetime.now() - timedelta(days=plotted_days)
         relevant_rolling_4day = rolling_4day.loc[start_plot : datetime.now()]
         relevant_rolling_1day = rolling_1day.loc[start_plot : datetime.now()]
         title_font_size = 14
@@ -53,14 +54,15 @@ class Team():
         plt.plot(relevant_rolling_4day, linewidth=1.0, color='b', label='4 day rolling average')
         plt.plot(relevant_rolling_1day, linewidth=1.0, color='r', label='1 day rolling average')
         plt.ylabel('Sentiment', fontsize=label_font_size)
-        plt.xlabel('"time"', fontsize=label_font_size)
+        plt.xlabel('Previous ' + str(plotted_days) + ' day(s)', fontsize=label_font_size)
         plt.xticks([], [])
         plt.title(title, fontsize=title_font_size)
         plt.legend(loc='best', fancybox=True)
         plt.tight_layout()
         plt.savefig(figure_file)
+        plt.close()
 
-    def analyze(self, game_time, analyzed_data_path, threshold = 0.0, start_date = datetime(2019, 8, 2), debug=False):
+    def analyze(self, game_time, analyzed_data_path, start_date = datetime(2019, 8, 2), debug=False):
         if debug:
             timing_start = time.time()
             print("entered team.Team.analyze")
@@ -71,6 +73,16 @@ class Team():
             new_sentiments, new_times = self.__tag_filter(os.path.join(analyzed_data_path, tweet_file), debug=debug)
             sentiments += new_sentiments
             times += new_times
+        
+        # test code section
+        adjusted_sentiments = len(sentiments) * [0.0]
+        for i in range(len(sentiments)):
+            if sentiments[i] > 0.5:
+                adjusted_sentiments[i] = 1.0
+            elif sentiments[i] < 0.5:
+                adjusted_sentiments[i] = -1.0
+        # sentiment_dataframe = pd.DataFrame(adjusted_sentiments, index=times, columns=['Sentiment'])
+        
         sentiment_dataframe = pd.DataFrame(sentiments, index=times, columns=['Sentiment'])
         sentiment_dataframe = sentiment_dataframe.sort_index()
         rolling_4day = sentiment_dataframe['Sentiment'].rolling('4d').mean()

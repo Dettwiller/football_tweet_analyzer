@@ -77,7 +77,7 @@ def get_next_matchup(schedule_file, league, previous_matchup=False, debug=False)
         print("tools.get_next_matchup completed in " + "{0:.4f}".format(time_elapsed))
     return matchup
 
-def get_to_analysis(next_matchup, log_file, raw_data_path, analyzed_data_path, debug=False):
+def get_to_analysis(next_matchup, log_file, raw_data_path, analyzed_data_path, bert_data_path = "", debug=False):
     if debug:
         timing_start = time.time()
         print("entered tools.get_to_analysis")
@@ -90,11 +90,12 @@ def get_to_analysis(next_matchup, log_file, raw_data_path, analyzed_data_path, d
         seconds_until_analysis = int((next_matchup.game_time- current_time).total_seconds()) - one_hour # analyze an hour before kickoff
     while seconds_until_analysis > 0:
         sleep_time = int(min(6 * one_hour, seconds_until_analysis))
+        hours_sleep_time = '{0:.2f}'.format((sleep_time + extra_delay) / 3600.0)
         if debug:
             log = "DEBUG: " + "{:%Y-%B-%d %H:%M}".format(current_time) + " Going to sleep for " + str(sleep_time + extra_delay) + " seconds!\n"
             log += "    DEBUG: " + str(seconds_until_analysis) + " seconds until " + next_matchup.name + " analysis time!\n"
         else:
-            log = "{:%Y-%B-%d %H:%M}".format(current_time) + " Going to sleep for " + str(sleep_time + extra_delay) + " seconds!\n"
+            log = "{:%Y-%B-%d %H:%M}".format(current_time) + " Going to sleep for " + str(sleep_time + extra_delay) + " seconds (" + hours_sleep_time + " hours)!\n"
             log += "    " + str(seconds_until_analysis) + " seconds until " + next_matchup.name + " analysis time!\n"
         with open(log_file, "a+", encoding='utf-8') as lf:
             lf.write(log)
@@ -102,7 +103,20 @@ def get_to_analysis(next_matchup, log_file, raw_data_path, analyzed_data_path, d
         sleep(sleep_time)
         sleep(extra_delay)
         current_time = datetime.now()
-        sentiment.analyze_raw_files(raw_data_path, analyzed_data_path)
+        # permanent code (uncomment please)
+        if bert_data_path:
+            # pass
+            sentiment.bert_analyze_raw_files(raw_data_path, analyzed_data_path, bert_data_path)
+        else:
+            sentiment.analyze_raw_files(raw_data_path, analyzed_data_path)
+
+        # temporary code
+        # if debug:
+        #     temp_data_path = "C:" + os.sep + "Users" + os.sep + "User" + os.sep + "Documents" + os.sep + "NFL_twitter_analysis" + os.sep + "datafiles_2019"
+        #     bert_analyzed_data_path = temp_data_path + os.sep + "bert_analyzed"
+        #     sentiment.bert_analyze_raw_files(raw_data_path, bert_analyzed_data_path, bert_data_path)
+        #     sentiment.analyze_raw_files(raw_data_path, analyzed_data_path)
+
         if debug:
             seconds_until_analysis = -1
         else:
@@ -119,4 +133,3 @@ def get_dated_files(file_directory, terminating_time, start_time = datetime(2019
             files += [candidate_filename]
         start_time += timedelta(days=1)
     return files
-
