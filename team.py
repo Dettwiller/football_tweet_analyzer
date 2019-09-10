@@ -73,6 +73,16 @@ class Team():
             new_sentiments, new_times = self.__tag_filter(os.path.join(analyzed_data_path, tweet_file), debug=debug)
             sentiments += new_sentiments
             times += new_times
+        
+        # test code section
+        adjusted_sentiments = len(sentiments) * [0.0]
+        for i in range(len(sentiments)):
+            if sentiments[i] > 0.5:
+                adjusted_sentiments[i] = 1.0
+            elif sentiments[i] < 0.5:
+                adjusted_sentiments[i] = -1.0
+        # sentiment_dataframe = pd.DataFrame(adjusted_sentiments, index=times, columns=['Sentiment'])
+        
         sentiment_dataframe = pd.DataFrame(sentiments, index=times, columns=['Sentiment'])
         sentiment_dataframe = sentiment_dataframe.sort_index()
         rolling_4day = sentiment_dataframe['Sentiment'].rolling('4d').mean()
